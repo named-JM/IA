@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: b30fd9f2fb0a5204eb82f7e9b1b277bf
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/LevelSelection.unity
+    guid: 937cad4fcb6b4784999d67c2cfe13cd7
+  - enabled: 1
+    path: Assets/Scenes/Puzzle.unity
+    guid: 8cd583a10bd1ced4182317c0cab47aba
+  - enabled: 1
+    path: Assets/Scenes/Stage1.unity
+    guid: a2373c30fc155d0469fd542535b6529a
+  - enabled: 1
+    path: Assets/Scenes/Stage2.unity
+    guid: f0dd728b80d5e3f409b6a029589ee2a9
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: f553a85666ffc9c469e1aa20cb1bda9e
+  - enabled: 1
+    path: Assets/Scenes/TriviaScene1.unity
+    guid: f72edba1aa0cff84385e4786e3fc63f4
+  - enabled: 1
+    path: Assets/Scenes/TriviaScene2.unity
+    guid: d720f2949986024458827d6b0802d6d9
+  - enabled: 1
+    path: Assets/Scenes/TriviaScene3.unity
+    guid: 9abf52c1dd13b6545a606d8261a0c690
+  - enabled: 1
+    path: Assets/Scenes/TriviaScene4.unity
+    guid: d7df5da52659d6a4ebf209ec802022f4
+  - enabled: 1
+    path: Assets/Scenes/TriviaScene5.unity
+    guid: 4781e63f9f15f4346ab8d300a0cb1f1a
+  - enabled: 1
+    path: Assets/Scenes/TriviaScene6.unity
+    guid: 3d878212dba3f524193af6ea16d96f06
+  - enabled: 1
+    path: Assets/Scenes/TriviaScene7.unity
+    guid: f3a45b2b7e41a7848bdfc5f0e62f2316
+  m_configObjects: {}
