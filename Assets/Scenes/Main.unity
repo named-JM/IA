@@ -509,6 +509,7 @@ GameObject:
   - component: {fileID: 168056822}
   - component: {fileID: 168056821}
   - component: {fileID: 168056823}
+  - component: {fileID: 168056824}
   m_Layer: 0
   m_Name: StoreItemPrefab
   m_TagString: Untagged
@@ -587,6 +588,23 @@ MonoBehaviour:
   - {fileID: 100311678}
   - {fileID: 988220542}
   - {fileID: 168364218}
+--- !u!114 &168056824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168056820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1446ecab0d8a7b24b9b5539fda987fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNameInputField: {fileID: 284577928}
+  submitButton: {fileID: 1899054020}
+  displayText: {fileID: 47847065}
+  panelToClose: {fileID: 991813226}
+  toggleImage: {fileID: 360152444}
 --- !u!1 &168364218
 GameObject:
   m_ObjectHideFlags: 0

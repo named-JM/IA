@@ -17,15 +17,20 @@ public class PlayerNameInput : MonoBehaviour
             return;
         }
 
-        // Load saved player name (if any) when the game starts
+        // Load and display the saved name on scene load
         string savedName = PlayerPrefs.GetString("PlayerName", "");
         if (!string.IsNullOrEmpty(savedName))
         {
-            displayText.text = "Welcome back, " + savedName + "!";
+            displayText.text = "Hello, " + savedName + "!";
+        }
+        else
+        {
+            displayText.text = "Enter your name:";
         }
 
         submitButton.onClick.AddListener(SaveAndDisplayPlayerName);
     }
+
 
     // Toggle the name input panel when the image is clicked
     public void ToggleNameInputPanel()

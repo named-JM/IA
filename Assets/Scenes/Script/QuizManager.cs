@@ -241,7 +241,7 @@ public class QuizManager : MonoBehaviour
 
         if (finalScoreText != null)
         {
-            finalScoreText.text = "Your Score: " + score + "/" + quizzes.Count;
+            finalScoreText.text = "Your Score: " + score;
         }
     }
 

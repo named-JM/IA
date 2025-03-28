@@ -1576,7 +1576,6 @@ MonoBehaviour:
     - Limba
     - 'Limbon '
     - None of the above
-    - None of the above
     correctAnswerIndex: 2
   - questionText: 'This place is where Andres Bonifacio shrine  Located '
     questionImage: {fileID: 21300000, guid: fcc7eef4e187da742a35398f49b672a9, type: 3}
@@ -1606,7 +1605,7 @@ MonoBehaviour:
     questionImage: {fileID: 21300000, guid: bad2a3e07e7ecdc4ca18b4ac5be0aff7, type: 3}
     options:
     - 'Indang Museum  '
-    - 'Indang Museum  '
+    - Indang Municipal
     - 'Museo Orlina '
     - None of the above
     correctAnswerIndex: 0
@@ -1631,7 +1630,7 @@ MonoBehaviour:
     options:
     - 'St.Gregory the great parish  '
     - 'St. Jude parish  '
-    - 'St. Gregorio great parish  '
+    - St. George great parish
     - None of the above
     correctAnswerIndex: 0
   - questionText: ' This church is located at Daine, indang '
@@ -1847,8 +1846,8 @@ MonoBehaviour:
   timerText: {fileID: 1726783951}
   scoreText: {fileID: 836365803}
   resultPanel: {fileID: 1664109328}
-  finalScoreText: {fileID: 0}
-  exitButton: {fileID: 0}
+  finalScoreText: {fileID: 1210990620}
+  exitButton: {fileID: 1794724686}
 --- !u!114 &1175331640
 MonoBehaviour:
   m_ObjectHideFlags: 0
