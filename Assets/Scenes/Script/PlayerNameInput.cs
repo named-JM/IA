@@ -30,7 +30,7 @@ public class PlayerNameInput : MonoBehaviour
 
         submitButton.onClick.AddListener(SaveAndDisplayPlayerName);
     }
-
+    
 
     // Toggle the name input panel when the image is clicked
     public void ToggleNameInputPanel()
