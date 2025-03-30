@@ -23,53 +23,54 @@ public class MapButtonHandler : MonoBehaviour
 
     private Dictionary<string, string> mapDescriptions = new Dictionary<string, string>
     {
-    { "Button1", "Banaba Lejos" }, // No location
+  { "Button1", "Banaba Lejos" },
 
-    { "Button2", "Calumpang Lejos\n🏡 Macalima Private Resort\n📍 Brgy. Calumpang Lejos 1, 4122 Indang, Philippines" },
+{ "Button2", "Calumpang Lejos\n\nResort:\n🏡 Macalima Private Resort" },
 
-    { "Button3", "Daine II" },
+{ "Button3", "Daine II" },
 
-    { "Button4", "Tambo Malaki\nCasa Virliosa Indang\n📍 III Tambo Malaki, Indang, Cavite\nEMV Flower Farm Main & EMV Villa\n📍 Sitio Portugal, Brgy. Tambo Malaki, Indang, Cavite" },
+{ "Button4", "Tambo Malaki\n\nResort & Accommodation:\nCasa Virliosa Indang\nEMV Flower Farm Main & EMV Villa" },
 
-    { "Button5", "Agus-os\nEl Herencia Garden Resort\n📍 Barangay Agus-os, Indang, Philippines, 4122\nLa Felicidad Private Resort\n📍 Barangay Agus-os, Indang, Philippines, 4122\nTerre Verte Farm Resort\n📍 193 Brgy. Agus-os, Indang, Cavite\nResort sa Kubo ni Ising\n📍 Brgy. Agus-os, Indang, Cavite\nLa UlrichLand Farm Resort\n📍 Barangay Agus-os, Indang, Cavite" },
+{ "Button5", "Agus-os\n\nResort:\nEl Herencia Garden Resort\nLa Felicidad Private Resort\nTerre Verte Farm Resort\nResort sa Kubo ni Ising\nLa UlrichLand Farm Resort" },
 
-    { "Button6", "📍Bancod" },
+{ "Button6", "📍 Bancod" },
 
-    { "Button7", "📍 Mataas na Lupa" },
+{ "Button7", "📍 Mataas na Lupa" },
 
-    { "Button8", "Daine I\n\nSa Kanluran Private Resort\n📍 East West Road, Brgy. Daine I, Indang, Cavite\nSeven Archangel Church\n📍 Daine, Indang, Cavite" },
+{ "Button8", "Daine I\n\nResort:\nSa Kanluran Private Resort\n\nEvent Place:\nSeven Archangel Church" },
 
-    { "Button9", "Calumpang Cerca\n\nCasa GooW Private Farm Resort\n📍 Calumpang Cerca, Indang, Cavite\nLolo & Lala's Farm\n📍 Brgy. Calumpang Cerca, Indang, Cavite\nEl Silangan Events Place Rental\n📍 Purok 4, Brgy. Calumpang Cerca, Indang, Cavite\nDonSyl’s Place Inc.\n📍 Calumpang Cerca, Indang, Cavite" },
+{ "Button9", "Calumpang Cerca\n\nResort:\nCasa GooW Private Farm Resort\nLolo & Lala's Farm\n\nEvent Place:\nEl Silangan Events Place Rental\nDonSyl’s Place Inc." },
 
-    { "Button10", "📍 Alulod\nEingelzen Private Resort\n📍 413 Purok 6, Brgy. Alulod, Indang, Cavite\nR.A's Private Pool\n📍 Patillio Alulod, Indang, Cavite\nMojica's Jardin\n📍 Purok 2, Alulod, Indang, Cavite" },
+{ "Button10", "Alulod\n\nResort:\nEingelzen Private Resort\nR.A's Private Pool\nMojica's Jardin" },
 
-    { "Button11", "Lumampong Balagbag\n\nCvSU Agri-Eco Tourism Park\n📍 Hostel Tropicana, Indang, Cavite" },
+{ "Button11", "Lumampong Balagbag\n\nEco-Tourism:\nCvSU Agri-Eco Tourism Park" },
 
-    { "Button12", "📍 Tambo Kulit" }, // No location
+{ "Button12", "📍 Tambo Kulit" },
 
-    { "Button13", "Kayquit II\n\nHacienda Gracita\n📍 Kayquit, Indang, Cavite, 4121" },
+{ "Button13", "Kayquit II\n\nResort & Accommodation:\nHacienda Gracita" },
 
-    { "Button14", "Buna Cerca\n\nZohlian's Villa\n📍 Blk 5 Lot 12, Green Valleyfield Subdivision, Buna Cerca, Indang, Cavite\nThe Canopy Farm PH\n📍 Brgy. Buna Cerca, Indang, Philippines, 4122\nPrecious Garden Events Place\n📍 Lot 6005, Buna Cerca Indang Mendez Road, Indang, Philippines\nBuklod Cabin (Glamping & Events)\n📍 Puerto Sampaloc Road, Buna Cerca, Indang, Cavite" },
+{ "Button14", "Buna Cerca\n\nResort:\nZohlian's Villa\nThe Canopy Farm PH\n\nEvent Place:\nPrecious Garden Events Place\nBuklod Cabin (Glamping & Events)" },
 
-    { "Button15", "Limbon\n\nLa Casa de Serenidad\n📍 Limbon, Indang, Cavite, Philippines\nBonifacio Shrine\n📍 Brgy. Limbon, Indang, Cavite" },
+{ "Button15", "Limbon\n\nAccommodation:\nLa Casa de Serenidad\n\nHistorical Site:\nBonifacio Shrine" },
 
-    { "Button16", "Banaba Cerca\n\nCasita de Señerez Resort / Carmelita Señerez\n📍 Purok 2, Brgy. Banaba Cerca, Indang, Philippines, 4027" },
+{ "Button16", "Banaba Cerca\n\nResort:\nCasita de Señerez Resort / Carmelita Señerez" },
 
-    { "Button17", "Lumampong Halayhay\n\nAlta Rios Resort\n📍 Brgy. Lumampong Halayhay, Indang-Alfonso Road, Indang, Philippines, 4122\nDayuhan's Events Place\n📍 040 Purok 1, Lumampong Halayhay, Indang, Cavite\nKanlungan Events Place Rental\n📍 Lumampong Halayhay, Indang, Cavite" },
+{ "Button17", "Lumampong Halayhay\n\nResort:\nAlta Rios Resort\n\nEvent Place:\nDayuhan's Events Place\nKanlungan Events Place Rental" },
 
-    { "Button18", "Kaytambog\n\nSagana Spring Resort\n📍 4588 Purok 1, Kaytambog, Indang, Cavite" },
+{ "Button18", "Kaytambog\n\nResort:\nSagana Spring Resort" },
 
-    { "Button19", "📍 Buna Lejos II" }, // No location
+{ "Button19", "📍 Buna Lejos II" },
 
-    { "Button20", "📍 Buna Lejos I" }, // No location
+{ "Button20", "📍 Buna Lejos I" },
 
-    { "Button21", "Guyam Malaki\n\nThe Joy of Nicky Private Resort\n📍 Purok 7, Barangay Guyam Malaki, Indang, Cavite\nLihim Ng Kubli Farm, Garden, and Events Place\n📍 Purok 7, Ilaya, Guyam Malaki, Indang, 4122 Cavite\nOur Haven Events Place\n📍 Ilaya, Guyam Malaki, Indang, 4122 Cavite" },
+{ "Button21", "Guyam Malaki\n\nResort:\nThe Joy of Nicky Private Resort\n\nEvent Place:\nLihim Ng Kubli Farm, Garden, and Events Place\nOur Haven Events Place" },
 
-    { "Button22", "Carasuchi\nLVG Paradise Resort and Events\n📍 Carasuchi-Anuling St., Mendez, Indang, Cavite\nHamani Pool Resort\n📍 Brgy. Pulo, Indang, Cavite\nHacienda Isabella\n📍 08 Brgy. Carasuchi, Indang, Cavite\nZoila's Private Resort\n📍 Purok 3, Pulo, Indang, Cavite" },
+{ "Button22", "Carasuchi\n\nResort:\nHamani Pool Resort\nHacienda Isabella\nZoila's Private Resort\n\nResort & Event Place:\nLVG Paradise Resort and Events" },
 
-    { "Button23", "Kayquit III\n\nSanctuario Nature Farms\n📍 Indang - Mendez Rd, Sitio Italaro, Indang, 4122 Cavite\nSiglo Farm Cafe\n📍 337 Narra Street, Kayquit 3, Indang, 4122 Cavite\nSoiree Private Resort\n📍 347 Narra, St. Kayquit Road, Indang, Cavite\nSiglo Paraiso\n📍 337 Narra Street, Indang, Cavite" },
+{ "Button23", "Kayquit III\n\nFarm & Resort:\nSanctuario Nature Farms\nSiglo Farm Cafe\nSoiree Private Resort\nSiglo Paraiso" },
 
-    { "Button24", "Mahabang Kahoy Lejos\n\nBalay Indang\n📍 88 Mahabang Kahoy Cerca, Indang, Philippines\nBelle Accueil Events Place\n📍 Mahabang Kahoy Cerca, Indang, Cavite\nBalustre Cerca\n📍 Mahabang Kahoy Cerca, Indang, Cavite\nDriftwoods Action Park\n📍 Brgy. Mahabang Kahoy Cerca, Indang-Mendez Road, 4122 Indang, Cavite" },
+{ "Button24", "Mahabang Kahoy Lejos\n\nResort:\nBalay Indang\n\nEvent Place:\nBelle Accueil Events Place\nBalustre Cerca\nDriftwoods Action Park" }
+
 };
 
     void Start()
@@ -130,7 +131,7 @@ public class MapButtonHandler : MonoBehaviour
         {
             // If not purchased, show the buy map panel
             buyMapPanel.SetActive(true);
-            mapText.text = "Use 5 points to unlock this area?";
+            mapText.text = "Use 300 points to unlock this area?";
         }
     }
 
@@ -143,9 +144,9 @@ public class MapButtonHandler : MonoBehaviour
         if (selectedMapKey == "") return;
 
         int currentScore = PlayerPrefs.GetInt("PlayerScore", 0);
-        if (currentScore >= 5)
+        if (currentScore >= 300) // Change from 5 to 300
         {
-            currentScore -= 5;
+            currentScore -= 300; // Deduct 300 points
             PlayerPrefs.SetInt("PlayerScore", currentScore);
             PlayerPrefs.SetInt(selectedMapKey, 1); // Mark area as purchased
             PlayerPrefs.Save();
@@ -163,6 +164,8 @@ public class MapButtonHandler : MonoBehaviour
             Debug.Log("Not enough points!");
         }
     }
+
+
 
     public void CloseMapPanel()
     {

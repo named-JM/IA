@@ -875,7 +875,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &158416436
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2174,7 +2174,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 16.129, y: -16.05, z: -733.04}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 396, y: -462}
+  m_AnchoredPosition: {x: 403.24, y: -484.31}
   m_SizeDelta: {x: 168.9477, y: 442.1776}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &450747106
@@ -2306,7 +2306,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -711.664}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.172, y: 445.77}
+  m_AnchoredPosition: {x: -7.957, y: 445.77}
   m_SizeDelta: {x: 232.8025, y: 133}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &487226034
@@ -3160,8 +3160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000017166, y: 101}
-  m_SizeDelta: {x: 745.9117, y: 419.6792}
+  m_AnchoredPosition: {x: -0.000017166, y: 67.22125}
+  m_SizeDelta: {x: 745.9117, y: 352.1218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &770351824
 CanvasRenderer:
@@ -3225,7 +3225,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3254,7 +3254,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -3.37767, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3778,7 +3778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -727.895}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -337, y: 8}
+  m_AnchoredPosition: {x: -329, y: 14.396}
   m_SizeDelta: {x: 265.0154, y: 235.2352}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002198002
@@ -6901,24 +6901,24 @@ RectTransform:
   - {fileID: 134892410}
   - {fileID: 295418005}
   - {fileID: 487226033}
-  - {fileID: 1862215541}
   - {fileID: 1421542602}
   - {fileID: 1002198001}
-  - {fileID: 286149244}
   - {fileID: 140886292}
-  - {fileID: 255383462}
   - {fileID: 80075706}
-  - {fileID: 60889839}
-  - {fileID: 2002764864}
   - {fileID: 1752120740}
   - {fileID: 450747105}
   - {fileID: 1928343262}
   - {fileID: 305311005}
   - {fileID: 1476373073}
   - {fileID: 148351659}
+  - {fileID: 286149244}
   - {fileID: 2095170621}
+  - {fileID: 2002764864}
   - {fileID: 221419549}
   - {fileID: 923128248}
+  - {fileID: 60889839}
+  - {fileID: 1862215541}
+  - {fileID: 255383462}
   - {fileID: 1170429575}
   - {fileID: 1128388043}
   - {fileID: 1574455551}

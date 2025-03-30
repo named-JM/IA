@@ -13,6 +13,7 @@ public class QuizManager : MonoBehaviour
         public Sprite questionImage;
         public string[] options;
         public int correctAnswerIndex;
+        public bool isHard;
     }
 
     [Header("Quiz Setup")]
@@ -27,93 +28,85 @@ public class QuizManager : MonoBehaviour
     public Text timerText;
     public Text scoreText;
     public GameObject resultPanel;
+    public GameObject continueExitPanel;
     public Text finalScoreText;
-    public Button exitButton;
 
-    // Game state variables
+    // Continue panel after every question answered
+    public GameObject continuePanel;
+    public Button continueQuestionButton;
+    public Button exitQuestionButton;
+
+    [Header("Audio Clips")]
+    public AudioSource audioSource;
+    public AudioClip correctSound;
+    public AudioClip wrongSound;
+
     private int currentQuestionIndex = 0;
     private int score = 0;
     private float timer;
     private bool isQuizActive = true;
+
     void Start()
     {
-        // Error checking
+        audioSource = GetComponent<AudioSource>();
+
         if (quizzes.Count == 0)
         {
             Debug.LogError("No questions assigned to the QuizManager!");
             return;
         }
 
-        // Load the previous total score from PlayerPrefs
         score = PlayerPrefs.GetInt("PlayerScore", 0);
-
-        // Shuffle the questions list
         ShuffleList(quizzes);
 
-        // Initialize game state
         timer = timerDuration;
         currentQuestionIndex = 0;
         isQuizActive = true;
 
-        // Initialize UI
         UpdateScoreText();
         resultPanel.SetActive(false);
+        continueExitPanel.SetActive(false);
+        continuePanel.SetActive(false);
 
-        // Set up exit button listener
-        if (exitButton != null)
+        if (continueQuestionButton != null)
         {
-            exitButton.onClick.RemoveAllListeners();
-            exitButton.onClick.AddListener(ExitGame);
+            continueQuestionButton.onClick.RemoveAllListeners();
+            continueQuestionButton.onClick.AddListener(ContinueToNextQuestion);
         }
 
-        // Start the quiz
+        if (exitQuestionButton != null)
+        {
+            exitQuestionButton.onClick.RemoveAllListeners();
+            exitQuestionButton.onClick.AddListener(ExitGame);
+        }
+
         LoadQuestion();
         StartCoroutine(TimerCountdown());
-    }
-
-    void Update()
-    {
-        // You can add additional update logic here if needed
     }
 
     void LoadQuestion()
     {
         if (currentQuestionIndex < quizzes.Count)
         {
-            // Reset timer for new question
             timer = timerDuration;
-
-            // Get current question
             Question q = quizzes[currentQuestionIndex];
 
-            // Set question text
-            if (questionText != null)
-                questionText.text = q.questionText;
+            questionText.text = q.questionText;
+            questionImage.sprite = q.questionImage;
+            questionImage.gameObject.SetActive(q.questionImage != null);
 
-            // Set question image if available
-            if (questionImage != null)
-            {
-                questionImage.sprite = q.questionImage;
-                questionImage.gameObject.SetActive(q.questionImage != null);
-            }
-
-            // Reset all button colors
             ResetButtonColors();
 
-            // Shuffle options while keeping track of correct answer
             List<string> shuffledOptions = new List<string>(q.options);
             ShuffleList(shuffledOptions);
-
             int newCorrectIndex = shuffledOptions.IndexOf(q.options[q.correctAnswerIndex]);
 
-            // Set up option buttons
             for (int i = 0; i < optionButtons.Length; i++)
             {
                 if (i < shuffledOptions.Count)
                 {
                     optionButtons[i].gameObject.SetActive(true);
                     optionButtons[i].GetComponentInChildren<Text>().text = shuffledOptions[i];
-
                     int index = i;
                     optionButtons[i].onClick.RemoveAllListeners();
                     optionButtons[i].onClick.AddListener(() => CheckAnswer(index, newCorrectIndex));
@@ -126,7 +119,6 @@ public class QuizManager : MonoBehaviour
         }
         else
         {
-            // All questions completed
             ShowFinalScore();
         }
     }
@@ -137,33 +129,38 @@ public class QuizManager : MonoBehaviour
 
         if (selectedIndex == correctIndex)
         {
-            // Correct answer
-            Debug.Log("✅ Correct Answer!");
-            score++;
-            UpdateScoreText();
+            audioSource.PlayOneShot(correctSound);
+
+            // Fixing score calculation
+            score += quizzes[currentQuestionIndex].isHard ? 20 : 10;
+
             optionButtons[selectedIndex].GetComponent<Image>().color = Color.green;
         }
         else
         {
-            // Wrong answer
-            Debug.Log("❌ Wrong Answer!");
+            audioSource.PlayOneShot(wrongSound);
             optionButtons[selectedIndex].GetComponent<Image>().color = Color.red;
-
-            // Highlight correct answer
             optionButtons[correctIndex].GetComponent<Image>().color = Color.green;
         }
 
-        // Move to next question after delay
-        StartCoroutine(NextQuestionDelay());
+        // Update score UI immediately
+        UpdateScoreText();
+
+        StartCoroutine(ShowContinuePanel());
     }
 
-    IEnumerator NextQuestionDelay()
+
+    IEnumerator ShowContinuePanel()
     {
         isQuizActive = false;
         yield return new WaitForSeconds(1.5f);
+        continuePanel.SetActive(true);
+    }
 
+    void ContinueToNextQuestion()
+    {
+        continuePanel.SetActive(false);
         currentQuestionIndex++;
-
         if (currentQuestionIndex < quizzes.Count)
         {
             LoadQuestion();
@@ -186,7 +183,6 @@ public class QuizManager : MonoBehaviour
 
         if (timer <= 0 && isQuizActive)
         {
-            Debug.Log("⏳ Time's up!");
             ShowFinalScore();
         }
     }
@@ -206,16 +202,10 @@ public class QuizManager : MonoBehaviour
             scoreText.text = score.ToString();
         }
 
-        // Save the accumulated score to PlayerPrefs
         PlayerPrefs.SetInt("PlayerScore", score);
         PlayerPrefs.Save();
-
-        // Update DisplayScore UI
-        if (DisplayScore.instance != null)
-        {
-            DisplayScore.instance.UpdateScoreUI();
-        }
     }
+
     void ShuffleList<T>(List<T> list)
     {
         for (int i = 0; i < list.Count; i++)
@@ -227,17 +217,12 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-
-
     void ShowFinalScore()
     {
         isQuizActive = false;
         StopAllCoroutines();
-
-        if (resultPanel != null)
-        {
-            resultPanel.SetActive(true);
-        }
+        resultPanel.SetActive(false);
+        continueExitPanel.SetActive(true);
 
         if (finalScoreText != null)
         {
@@ -247,7 +232,6 @@ public class QuizManager : MonoBehaviour
 
     void ExitGame()
     {
-        Debug.Log("Exiting to " + nextSceneName);
         SceneManager.LoadScene(nextSceneName);
     }
 

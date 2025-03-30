@@ -4,6 +4,8 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using System.Collections;
+using TMPro;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +17,8 @@ public class GameManager : MonoBehaviour
     public Transform answerSlotContainer1;  // Container for answer slots
     public Transform answerSlotContainer2;  // Container for answer slots
     public Transform answerSlotContainer3;  // Container for answer slots
+
+
 
 
     public int score = 0;
@@ -46,11 +50,15 @@ public class GameManager : MonoBehaviour
     public GameObject hintPanel;  // Panel for hint confirmation
     public Button confirmHintButton; // Yes Button
     public Button cancelHintButton; // No Button
-    public Text hintText; // Text on panel
+    public TextMeshProUGUI hintText; // Text on panel
 
     public GameObject noHintPanel; // Panel to show insufficient points message
-    public Text noHintText; // Text inside the panel
+    public TextMeshProUGUI noHintText; // Text inside the panel
     public Button noHintOkButton; // OK button
+
+    public GameObject continuePanel;  // Confirmation panel
+    public Button continueButton;  // Button to continue
+    public Button exitButton;  // Button to exit
 
 
     // Dictionary to track which button corresponds to which input field
@@ -91,6 +99,10 @@ public class GameManager : MonoBehaviour
         noHintPanel.SetActive(false); // Hide the panel initially
         noHintOkButton.onClick.AddListener(CloseNoHintPanel);
         ResetGame();  // Start the first round
+
+        continuePanel.SetActive(false); // Hide continue panel initially
+        continueButton.onClick.AddListener(ContinueGame);
+        exitButton.onClick.AddListener(ExitGame);
     }
 
     private void ResetGame()
@@ -403,13 +415,16 @@ private void SetupSlotsForWord(string word, Transform container)
 
     private void ShowTrivia()
     {
-        triviaText.text = currentQuestion.trivia; // Assuming QuestionData has a trivia field
+        triviaText.text = currentQuestion.trivia;
         triviaModal.SetActive(true);
     }
+
     private void CloseTrivia()
     {
         triviaModal.SetActive(false);
+        continuePanel.SetActive(true);  // Show continue panel after trivia is closed
     }
+
 
 
     private void CheckAnswer()
@@ -432,15 +447,16 @@ private void SetupSlotsForWord(string word, Transform container)
             PlayAudio(correctAnswerClip);
             UpdateScore(10);
             questionsAnswered++;
-            ShowTrivia();
-            ResetGame();
+
+            ShowTrivia();  // Show trivia first
         }
         else
         {
             PlayAudio(wrongAnswerClip);
-            HighlightIncorrectAnswer(); // Add this function
+            HighlightIncorrectAnswer();
             ClearAnswerSlots();
         }
+
     }
 
     private void HighlightIncorrectAnswer()
@@ -510,4 +526,18 @@ private void SetupSlotsForWord(string word, Transform container)
         gameOverPanel.SetActive(true);
         finalScoreText.text = $"Final Score: {score}";
     }
+
+    private void ContinueGame()
+    {
+        continuePanel.SetActive(false); // Hide the panel
+        ResetGame(); // Start the next question
+    }
+
+    private void ExitGame()
+    {
+        continuePanel.SetActive(false);
+        Debug.Log("Game Over - Exiting to Main Menu");
+        // Implement logic to return to main menu or exit the game  
+    }
+
 }
