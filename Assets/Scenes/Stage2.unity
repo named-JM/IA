@@ -1842,7 +1842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quizzes:
-  - questionText: What is the Indang festival
+  - questionText: WHAT IS THE INDANG FESTIVAL
     questionImage: {fileID: 21300000, guid: d2c78e7be6043d449b4d993dea02bb22, type: 3}
     options:
     - 'Irok festival  '
@@ -1851,7 +1851,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: ' This festival is held during Nov 30 - December 2 '
+  - questionText: THIS FESTIVAL IS HELD DURING NOV 30 - DECEMBER 2
     questionImage: {fileID: 21300000, guid: d2c78e7be6043d449b4d993dea02bb22, type: 3}
     options:
     - 'Irok festival  '
@@ -1860,8 +1860,8 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: "This name came from \u201CLim\u201D and \u201CBon,\u201D words
-      overheard during a Spanish-era conversation"
+  - questionText: "THIS NAME CAME FROM \u201CLIM\u201D AND \u201CBON,\u201D WORDS
+      OVERHEARD DURING A SPANISH-ERA CONVERSATION. "
     questionImage: {fileID: 21300000, guid: fcc7eef4e187da742a35398f49b672a9, type: 3}
     options:
     - 'Indang '
@@ -1870,7 +1870,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 2
     isHard: 1
-  - questionText: 'This place is where Andres Bonifacio shrine located '
+  - questionText: THIS PLACE IS WHERE ANDRES BONIFACIO SHRINE LOCATED?
     questionImage: {fileID: 21300000, guid: fcc7eef4e187da742a35398f49b672a9, type: 3}
     options:
     - 'Dasmarinas  '
@@ -1879,7 +1879,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 1
     isHard: 1
-  - questionText: This falls is located at kaytapos indang
+  - questionText: THIS FALL IS LOCATED AT KAYTAPOS INDANG
     questionImage: {fileID: 21300000, guid: 93db4c1d8bbc7c84aa42c6289b71822b, type: 3}
     options:
     - 'Pagsajan Falls  '
@@ -1888,7 +1888,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 1
     isHard: 1
-  - questionText: This museum is located at heart of indang
+  - questionText: 'THIS MUSEUM IS LOCATED AT THE HEART OF INDANG '
     questionImage: {fileID: 21300000, guid: bad2a3e07e7ecdc4ca18b4ac5be0aff7, type: 3}
     options:
     - 'Indang community museum '
@@ -1897,7 +1897,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: This place used to be the old Indang municipal building
+  - questionText: THIS PLACE USED TO BE THE OLD INDANG MUNICIPAL BUILDING
     questionImage: {fileID: 21300000, guid: bad2a3e07e7ecdc4ca18b4ac5be0aff7, type: 3}
     options:
     - 'Indang Museum  '
@@ -1906,7 +1906,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: Kalamay buna is one of th delicacies of
+  - questionText: KALAMAY BUNA IS ONE OF TH DELICACIES OF?
     questionImage: {fileID: 21300000, guid: 272dd87fd5b44ce46bcd7ef962df1f3f, type: 3}
     options:
     - 'Indang '
@@ -1915,7 +1915,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: Commonly known as Indang Church
+  - questionText: 'COMMONLY KNOWN AS INDANG CHURCH '
     questionImage: {fileID: 21300000, guid: 0e6334fc1978d384bba4da4e0c429088, type: 3}
     options:
     - 'St. Gregory the great parish  '
@@ -1924,7 +1924,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: 'This church was finished year 1710 '
+  - questionText: 'THIS CHURCH WAS FINISHED YEAR 1710 '
     questionImage: {fileID: 21300000, guid: 0e6334fc1978d384bba4da4e0c429088, type: 3}
     options:
     - 'St.Gregory the great parish  '
@@ -1933,20 +1933,20 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: ' This church is located at Daine, indang '
+  - questionText: THIS CHURCH IS LOCATED AT DAINE, INDANG
     questionImage: {fileID: 21300000, guid: cdde2ef5a083a2d4b935c2497dfc1481, type: 3}
     options:
     - '7 archangel church  '
-    - Eght archangel church
+    - Eight archangel church
     - 'Six archangel church  '
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: ' This church was established year  1611   '
+  - questionText: THIS CHURCH WAS ESTABLISHED YEAR 1611
     questionImage: {fileID: 21300000, guid: cdde2ef5a083a2d4b935c2497dfc1481, type: 3}
     options:
     - '7 archangel church  '
-    - Eght archangel church
+    - Eight archangel church
     - 'Six archangel church  '
     - None of the above
     correctAnswerIndex: 0
@@ -1964,22 +1964,22 @@ MonoBehaviour:
     questionImage: {fileID: 21300000, guid: f96fc923d69e8a24d8735c8d69f8f477, type: 3}
     options:
     - 'Limbon, Indang cavite  '
-    - 'LImban . Indang cavite  '
-    - 'Lima , Indang caavite  '
+    - 'LImban, Indang cavite  '
+    - 'Lima, Indang cavite  '
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: 'This farm, garden and event place is located at  guyam malaki,
-      indang '
+  - questionText: 'THIS FARM GARDEN AND EVENT PLACE IS LOCATED AT  GUYAM MALAKI,
+      INDANG '
     questionImage: {fileID: 21300000, guid: b81bce88f64bf074a9b1456102f5a19b, type: 3}
     options:
     - 'Lihim ng Kubli  '
     - 'Lihim ng tanza  '
-    - ' Lihim ng Indang  '
+    - 'Lihim ng Indang  '
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: 'This place is located at Tambo Malaki , indang  '
+  - questionText: THIS PLACE IS LOCATED AT TAMBO MALAKI , INDANG
     questionImage: {fileID: 21300000, guid: b6d4d901fd70ae44c816e1f8e32cf6cf, type: 3}
     options:
     - 'Emw  flower farm  '
@@ -1988,7 +1988,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: This place is located at agus-os , indang
+  - questionText: This place is located at agus-os, indang
     questionImage: {fileID: 21300000, guid: c82373b9e9a75614eadf0d40745d95eb, type: 3}
     options:
     - La ulrich land farm resorts
@@ -1997,7 +1997,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: 'Ths place is located at carasuchi , indang '
+  - questionText: 'Ths place is located at carasuchi, indang '
     questionImage: {fileID: 21300000, guid: 6749ff9231c9c994093634c01c1d420e, type: 3}
     options:
     - 'Hacienda isabella  '
@@ -2015,7 +2015,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: 'This place is locates in buena cerca , indang '
+  - questionText: 'This place locates in buena cerca , indang '
     questionImage: {fileID: 21300000, guid: 26daec7383688ba488853d61885b4b3f, type: 3}
     options:
     - 'Canopy farm ph  '
@@ -2024,7 +2024,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: 'This place is located calumpong lejos, indang '
+  - questionText: 'This place is located at calumpong lejos, indang '
     questionImage: {fileID: 21300000, guid: bfb3a510ae96ff0439f5a0da4aefb1f6, type: 3}
     options:
     - 'Macalima events place and result  '
@@ -2051,7 +2051,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: This place is located at pulo , indang
+  - questionText: This place is located at pulo, indang
     questionImage: {fileID: 21300000, guid: c7ea0cf4d93f3eb4da0a0e8bb7b2d7a1, type: 3}
     options:
     - 'Hamani private resort  '
@@ -2060,8 +2060,7 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: ' Indang is one of town of the province of Cavite which is now
-      known as the? '
+  - questionText: INDANG IS A TOWN IN THE PROVINCE OF CAVITE, NOW KNOWN AS THE _____?
     questionImage: {fileID: 21300000, guid: f494e00ce0f1b064688b7cf21c21d5bc, type: 3}
     options:
     - coffee capital of the Philippines
@@ -2070,8 +2069,8 @@ MonoBehaviour:
     - surfing capital of the philippines
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: 'a resident who accused Bonifacio of threatening the people and
-      burning the church, and Juan Dimabiling, the first gobernadorcillo of Indang.  '
+  - questionText: '  A RESIDENT WHO ACCUSED BONIFACIO OF THREATENING THE PEOPLE AND
+      BURNING THE CHURCH.'
     questionImage: {fileID: 21300000, guid: fa484ef37508e784e9b1253df32584c8, type: 3}
     options:
     - 'Severino de las Alas '
@@ -2080,9 +2079,9 @@ MonoBehaviour:
     - 'Cardinal Luis Antonio Gokim Tagle '
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: ' This candy, which is originally made in Brgy. Kayquit, Indang,
-      Cavite, is very popular because of its caramel taste. This candy is not that
-      sweet and can be bought in local grocery and sari-sari stores in the municipality. '
+  - questionText: 'THIS CANDY, ORIGINALLY FROM BRGY. KAYQUIT, INDANG, CAVITE, IS
+      POPULAR FOR ITS CARAMEL TASTE, NOT TOO SWEET, AND AVAILABLE IN LOCAL GROCERY
+      AND SARI-SARI STORES. '
     questionImage: {fileID: 21300000, guid: e8d46d64092482343a6a136901f40e19, type: 3}
     options:
     - Balikutsa
@@ -2091,9 +2090,7 @@ MonoBehaviour:
     - 'pastillas '
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: 'This traditional kakanin is described as sweet and chewy. It is
-      made of glutinous rice, coconut milk, brown sugar, and fortified with young
-      coconut meat or ripe jackfruit strips. '
+  - questionText: THIS TRADITIONAL KAKANIN IS KNOWN FOR ITS SWEET AND CHEWY TEXTURE.
     questionImage: {fileID: 21300000, guid: 4c61b9d16a62a4545a5b95affdcbb19f, type: 3}
     options:
     - Kalamay
@@ -2102,7 +2099,7 @@ MonoBehaviour:
     - Burger patty
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: ' what did you call this product? '
+  - questionText: ' WHAT IS THIS PRODUCT CALLED?'
     questionImage: {fileID: 21300000, guid: c2504f6c34305364d8971d06fe933a5b, type: 3}
     options:
     - Kending pinya
@@ -2111,7 +2108,7 @@ MonoBehaviour:
     - Sampaloc
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: 'what did you call this product? '
+  - questionText: WHAT DO YOU CALL THIS PRODUCT?
     questionImage: {fileID: 21300000, guid: df60fdf71df91d64cb43d870c67f22b3, type: 3}
     options:
     - Camatchile bread
@@ -2120,8 +2117,8 @@ MonoBehaviour:
     - barquillo
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: ' a traditional Filipino vinegar made from the sap of the Arenga
-      pinnata palm'
+  - questionText: ' WHAT DO YOU CALL THE TRADITIONAL FILIPINO VINEGAR MADE FROM THE
+      SAP OF THE ARENGA PINNATA PALM?'
     questionImage: {fileID: 21300000, guid: ec6a2aeeed2a7a142b8121daa0721e72, type: 3}
     options:
     - sukang irok
@@ -2130,7 +2127,8 @@ MonoBehaviour:
     - 'Sukang paombong '
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: 'The leading crops grown in Indang and surrounding areas include? '
+  - questionText: 'WHAT ARE THE LEADING CROPS GROWN IN INDANG AND THE SURROUNDING
+      AREAS? '
     questionImage: {fileID: 21300000, guid: e4356efa6d73b4b42b3165b6f9c51049, type: 3}
     options:
     - 'abaca, coconuts, upland rice, and corn '
@@ -2139,8 +2137,8 @@ MonoBehaviour:
     - real estate, networking, business
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: 'this is since 1999, which specializes in crafting Bahay Kubos,
-      and YK''s Crafts, which creates handmade bouquets.  '
+  - questionText: SINCE 1999, THIS COMPANY SPECIALIZES IN CRAFTING BAHAY KUBOS AND
+      YK'S CRAFTS, WHICH CREATE HANDMADE BOUQUETS.
     questionImage: {fileID: 21300000, guid: ca37d4da8f4c93041a739c0a31d9f9d5, type: 3}
     options:
     - Reymar Bamboo Craft
@@ -2149,13 +2147,22 @@ MonoBehaviour:
     - 'Likhang Maragondon '
     correctAnswerIndex: 0
     isHard: 1
-  - questionText: 'Where is Kalikhasan Leisure Farm located? '
+  - questionText: WHERE IS KALIKHASAN LEISURE FARM SITUATED?
     questionImage: {fileID: 21300000, guid: 68b709af6060f6c45b5cbef5ec598e9f, type: 3}
     options:
     - banaba, cerca indang
     - 'buna cerca, indang '
     - 'lumampong halayhay '
     - 'daine 1 '
+    correctAnswerIndex: 0
+    isHard: 1
+  - questionText: THIS PLACE IS LOCATED AT SITIO - ITALANO KAYQUIT III ,INDANG
+    questionImage: {fileID: 21300000, guid: fc65a7ee19a63614ebbe4afd268a7976, type: 3}
+    options:
+    - 'SANCTUARIO FARM AND RESORT '
+    - 'SANCTUARIO FARM NATURE '
+    - 'SACNTUARIO NATURE FARM '
+    - 'NONE OF THE ABOVE '
     correctAnswerIndex: 0
     isHard: 1
   timerDuration: 20

@@ -50,6 +50,9 @@ public class QuizManager : MonoBehaviour
     private float timer; // Countdown timer for the current question
     private bool isQuizActive = true; // Status to check if the quiz is ongoing
 
+    // List of words to be italicized
+    private List<string> wordsToItalicize = new List<string> { "indang" };
+
     /// <summary>
     /// Initializes the quiz manager, sets up UI, and loads the first question.
     /// </summary>
@@ -95,6 +98,29 @@ public class QuizManager : MonoBehaviour
         StartCoroutine(TimerCountdown()); // Start the timer countdown
     }
 
+
+    /// <summary>
+    /// Italicizes specific words in the given question text.
+    /// </summary>
+    /// <param name="questionText">The original question text.</param>
+    /// <returns>The question text with specified words italicized.</returns>
+    private string ItalicizeSpecificWords(string inputText)
+    {
+        foreach (string word in wordsToItalicize)
+        {
+            string pattern = $@"\b{word}\b";
+            string replacement = $"<i>{word.ToUpper()}</i>";
+            inputText = System.Text.RegularExpressions.Regex.Replace(
+                inputText,
+                pattern,
+                replacement,
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase
+            );
+        }
+        return inputText;
+    }
+
+
     /// <summary>
     /// Loads the current question and sets the UI for the question text, image, and answer options.
     /// </summary>
@@ -105,6 +131,10 @@ public class QuizManager : MonoBehaviour
         {
             timer = timerDuration; // Reset the timer for the new question
             Question q = quizzes[currentQuestionIndex]; // Get the current question
+            // Italicize specific words in the question text and capitalized all
+            string formattedQuestionText = ItalicizeSpecificWords(q.questionText.ToUpper());
+            questionText.text = formattedQuestionText;
+
 
             // Update UI with the current question's text and image
             questionText.text = q.questionText;
@@ -125,7 +155,13 @@ public class QuizManager : MonoBehaviour
                 {
                     // Set up option button for displayed option
                     optionButtons[i].gameObject.SetActive(true);
-                    optionButtons[i].GetComponentInChildren<Text>().text = shuffledOptions[i];
+                    string optionText = shuffledOptions[i].ToUpper(); // Make entire option uppercase
+
+                    // Italicize specific words even inside options
+                    optionText = ItalicizeSpecificWords(optionText);
+
+                    optionButtons[i].GetComponentInChildren<Text>().text = optionText;
+
                     int index = i; // Capture index for lambda expression
                     optionButtons[i].onClick.RemoveAllListeners(); // Remove any existing listeners
                     optionButtons[i].onClick.AddListener(() => CheckAnswer(index, newCorrectIndex)); // Add listener to check answer
