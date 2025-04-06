@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using System.Linq;
 
 /// <summary>
 /// Handles the interaction with map buttons in the game, including showing information,
@@ -20,38 +21,21 @@ public class MapButtonHandler : MonoBehaviour
 
     private string selectedMapKey = ""; // Key of the currently selected map
     private int score; // Player's score
-    public Color lockedColor = Color.gray; // Color for locked (unpurchased) buttons
-    public Color unlockedColor = Color.white; // Color for unlocked (purchased) buttons
+    public Color unlockedColor = new Color(1f, 1f, 1f, 0.9f); // Slightly translucent white
+    public Color lockedColor = new Color(0.4f, 0.4f, 0.4f, 1f); // Dim gray
+
     public List<Button> mapButtons = new List<Button>(); // List of buttons for each map
 
-    // Dictionary that contains descriptions associated with each map button
-    private Dictionary<string, string> mapDescriptions = new Dictionary<string, string>
-    {
-        { "Button1", "Banaba Lejos" },
-        { "Button2", "Calumpang Lejos\n\nResort:\n🏡 Macalima Private Resort" },
-        { "Button3", "Daine II" },
-        { "Button4", "Tambo Malaki\n\nResort & Accommodation:\nCasa Virliosa Indang\nEMV Flower Farm Main & EMV Villa" },
-        { "Button5", "Agus-os\n\nResort:\nEl Herencia Garden Resort\nLa Felicidad Private Resort\nTerre Verte Farm Resort\nResort sa Kubo ni Ising\nLa UlrichLand Farm Resort" },
-        { "Button6", "📍 Bancod" },
-        { "Button7", "📍 Mataas na Lupa" },
-        { "Button8", "Daine I\n\nResort:\nSa Kanluran Private Resort\n\nEvent Place:\nSeven Archangel Church" },
-        { "Button9", "Calumpang Cerca\n\nResort:\nCasa GooW Private Farm Resort\nLolo & Lala's Farm\n\nEvent Place:\nEl Silangan Events Place Rental\nDonSyl’s Place Inc." },
-        { "Button10", "Alulod\n\nResort:\nEingelzen Private Resort\nR.A's Private Pool\nMojica's Jardin" },
-        { "Button11", "Lumampong Balagbag\n\nEco-Tourism:\nCvSU Agri-Eco Tourism Park" },
-        { "Button12", "📍 Tambo Kulit" },
-        { "Button13", "Kayquit II\n\nResort & Accommodation:\nHacienda Gracita" },
-        { "Button14", "Buna Cerca\n\nResort:\nZohlian's Villa\nThe Canopy Farm PH\n\nEvent Place:\nPrecious Garden Events Place\nBuklod Cabin (Glamping & Events)" },
-        { "Button15", "Limbon\n\nAccommodation:\nLa Casa de Serenidad\n\nHistorical Site:\nBonifacio Shrine" },
-        { "Button16", "Banaba Cerca\n\nResort:\nCasita de Señerez Resort / Carmelita Señerez" },
-        { "Button17", "Lumampong Halayhay\n\nResort:\nAlta Rios Resort\n\nEvent Place:\nDayuhan's Events Place\nKanlungan Events Place Rental" },
-        { "Button18", "Kaytambog\n\nResort:\nSagana Spring Resort" },
-        { "Button19", "📍 Buna Lejos II" },
-        { "Button20", "📍 Buna Lejos I" },
-        { "Button21", "Guyam Malaki\n\nResort:\nThe Joy of Nicky Private Resort\n\nEvent Place:\nLihim Ng Kubli Farm, Garden, and Events Place\nOur Haven Events Place" },
-        { "Button22", "Carasuchi\n\nResort:\nHamani Pool Resort\nHacienda Isabella\nZoila's Private Resort\n\nResort & Event Place:\nLVG Paradise Resort and Events" },
-        { "Button23", "Kayquit III\n\nFarm & Resort:\nSanctuario Nature Farms\nSiglo Farm Cafe\nSoiree Private Resort\nSiglo Paraiso" },
-        { "Button24", "Mahabang Kahoy Lejos\n\nResort:\nBalay Indang\n\nEvent Place:\nBelle Accueil Events Place\nBalustre Cerca\nDriftwoods Action Park" }
-    };
+    [Header("Manual Modals")]
+    public List<GameObject> manualModals; // Drag 24 modal GameObjects in the inspector
+
+    // Below this is not used now as I used manual modals
+    [Header("Map Info List")]
+    public List<MapInfoData> mapInfoList = new List<MapInfoData>();
+    [Header("Image Content")]
+    public Transform imageContainer; // Drag your ImageContainer here
+    public GameObject imagePrefab; // Create a simple prefab with just an Image component
+    public GameObject textPrefab; // A simple prefab with just a TextMeshProUGUI component
 
     /// <summary>
     /// Initializes the script and sets up listeners for UI elements.
@@ -82,33 +66,83 @@ public class MapButtonHandler : MonoBehaviour
 
         // Debug log for understanding map key status
         Debug.Log($"Button {selectedMapKey} unlocked: " + PlayerPrefs.GetInt(selectedMapKey, 0));
+        for (int i = 0; i < mapButtons.Count; i++)
+        {
+            string key = "Map" + i;
+            Debug.Log($"[INIT] {key} status: {PlayerPrefs.GetInt(key, 0)}");
+        }
+
+    }
+    void OnMouseDown()
+{
+    Debug.Log("Map fragment clicked!");
+    // Do whatever you want here
+}
+
+    // Hide all modals
+    private void HideAllModals()
+    {
+        foreach (GameObject modal in manualModals)
+        {
+            modal.SetActive(false);
+        }
+    }
+
+    public void ShowManualModal(int index)
+    {
+        if (PlayerPrefs.GetInt("Map" + index, 0) == 1)
+        {
+            HideAllModals(); // Hide others
+            if (index >= 0 && index < manualModals.Count)
+            {
+                manualModals[index].SetActive(true);
+            }
+        }
+        else
+        {
+            selectedMapKey = "Map" + index;
+            buyMapPanel.SetActive(true);
+            mapText.text = "Use 300 points to unlock this area?";
+        }
+    }
+
+    public void HideAllModalsFromButton()
+    {
+        HideAllModals();
     }
 
     /// <summary>
     /// Updates the colors of map buttons based on their purchase status.
     /// </summary>
-    private void UpdateButtonColors()
+   private void UpdateButtonColors()
+{
+    foreach (Button btn in mapButtons)
     {
-        foreach (Button btn in mapButtons)
+        string buttonName = btn.name;
+
+        // Extract number from the button name like "Button5"
+        string numberPart = new string(buttonName.Where(char.IsDigit).ToArray());
+
+        if (!int.TryParse(numberPart, out int index))
         {
-            string buttonName = btn.name; // Get the name of the button
-            bool isUnlocked = PlayerPrefs.GetInt(buttonName, 0) == 1; // Check if the map is purchased
+            Debug.LogError("Invalid button name: " + buttonName);
+            continue;
+        }
 
-            // Set button colors based on unlocked status
-            ColorBlock colors = btn.colors;
-            colors.normalColor = isUnlocked ? unlockedColor : lockedColor;
-            colors.highlightedColor = isUnlocked ? unlockedColor : lockedColor;
-            colors.pressedColor = isUnlocked ? unlockedColor : lockedColor;
-            colors.selectedColor = isUnlocked ? unlockedColor : lockedColor;
-            colors.disabledColor = isUnlocked ? unlockedColor : lockedColor;
+        string mapKey = "Map" + index;
+        bool isUnlocked = PlayerPrefs.GetInt(mapKey, 0) == 1;
 
-            btn.colors = colors; // Apply updated color settings
+        // Debug check to see what is happening
+        Debug.Log($"Checking {mapKey}: Unlocked = {isUnlocked}");
 
-            // Force button to refresh by temporarily disabling and re-enabling
-            btn.interactable = false;
-            btn.interactable = true;
+        Image[] allImages = btn.GetComponentsInChildren<Image>(true);
+        foreach (Image img in allImages)
+        {
+            img.color = isUnlocked ? unlockedColor : lockedColor;
         }
     }
+}
+
 
     /// <summary>
     /// Displays the information panel with trivia. Checks if the map is purchased first.
@@ -116,21 +150,44 @@ public class MapButtonHandler : MonoBehaviour
     /// <param name="buttonName">The button name that triggered the info display.</param>
     public void ShowInfo(string buttonName)
     {
-        selectedMapKey = buttonName; // Store the selected map's key
+        selectedMapKey = buttonName;
 
-        // Check if the map has been purchased
-        if (PlayerPrefs.GetInt(buttonName, 0) == 1)
+        // Extract the number part from "ButtonX"
+        string numberPart = new string(buttonName.Where(char.IsDigit).ToArray());
+
+        if (!int.TryParse(numberPart, out int index))
         {
-            // If the area is purchased, show the trivia panel
-            infoText.text = mapDescriptions.ContainsKey(buttonName) ? mapDescriptions[buttonName] : "No Information Available.";
-            infoPanel.SetActive(true); // Activate the info panel
+            Debug.LogError("Invalid button name: " + buttonName);
+            return;
+        }
+
+        // Adjust for PlayerPrefs key format if needed (e.g., "Map1" instead of "Button1")
+        string mapKey = "Map" + index;
+
+        if (PlayerPrefs.GetInt(mapKey, 0) == 1)
+        {
+            HideAllModals();
+
+            if (index >= 0 && index < manualModals.Count)
+            {
+                manualModals[index].SetActive(true);
+            }
+            else
+            {
+                Debug.LogWarning("Manual modal index out of range: " + index);
+            }
         }
         else
         {
-            // If not purchased, show the buy map panel
+            selectedMapKey = mapKey; // Make sure selectedMapKey uses the correct format
             buyMapPanel.SetActive(true);
-            mapText.text = "Use 300 points to unlock this area?"; // Display confirmation message
+            mapText.text = "Use 300 points to unlock this area?";
         }
+    }
+
+    public void CloseModal(GameObject modal)
+    {
+        modal.SetActive(false);
     }
 
     /// <summary>
@@ -188,4 +245,7 @@ public class MapButtonHandler : MonoBehaviour
     {
         scoreText.text = PlayerPrefs.GetInt("PlayerScore", 0).ToString(); // Update score text display
     }
+   
+
 }
+

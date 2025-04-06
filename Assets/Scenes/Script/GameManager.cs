@@ -4,6 +4,7 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 /// <summary>
@@ -58,6 +59,14 @@ public class GameManager : MonoBehaviour
     public GameObject continuePanel; // Panel to confirm continuation after answering
     public Button continueButton; // Button to continue to the next question
     public Button exitButton; // Button to exit the game
+    public Button backButton; // Back button to show quit confirmation modal
+
+    [Header("Quit Confirmation Modal")]
+    public GameObject quitConfirmationModal;
+    public Button yesQuitButton;
+    public Button noQuitButton;
+
+
 
     // **Dictionary to track input fields and their corresponding buttons**
     private Dictionary<InputField, Button> inputFieldButtonMap = new Dictionary<InputField, Button>();
@@ -106,6 +115,37 @@ public class GameManager : MonoBehaviour
         continuePanel.SetActive(false); // Hide continue panel initially
         continueButton.onClick.AddListener(ContinueGame); // Add listener for continuation
         exitButton.onClick.AddListener(ExitGame); // Add listener for exiting the game
+
+        // Set up back button listener
+        if (backButton != null)
+        {
+            backButton.onClick.RemoveAllListeners();
+            backButton.onClick.AddListener(ShowQuitConfirmation);
+        }
+
+        // Quit Confirmation Buttons
+        if (yesQuitButton != null)
+        {
+            yesQuitButton.onClick.RemoveAllListeners();
+            yesQuitButton.onClick.AddListener(YesExit); // Confirm quit
+        }
+        if (noQuitButton != null)
+        {
+            noQuitButton.onClick.RemoveAllListeners();
+            noQuitButton.onClick.AddListener(() =>
+            {
+                quitConfirmationModal.SetActive(false); // Cancel quit
+            });
+        }
+
+    }
+    void ShowQuitConfirmation()
+    {
+        quitConfirmationModal.SetActive(true); // Show the modal
+    }
+    void YesExit()
+    {
+        SceneManager.LoadScene("Main");
     }
 
     /// <summary>

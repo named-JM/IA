@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 /// <summary>
 /// QuizManager is responsible for handling the quiz game logic including question loading, answer checking, score tracking, and UI updates.
 /// </summary>
@@ -18,12 +18,13 @@ public class QuizManager : MonoBehaviour
         public string[] options; // Multiple choice options for the question
         public int correctAnswerIndex; // Index of the correct answer in options
         public bool isHard; // Indicates if the question is hard
+        public string trivia; // ✅ Add this line
     }
 
     [Header("Quiz Setup")]
     public List<Question> quizzes = new List<Question>(); // List of questions in the quiz
     public float timerDuration = 30f; // Duration for the timer per question
-    public string nextSceneName = "MainMenu"; // Scene to load when the quiz is exited
+    public string nextSceneName = "Main"; // Scene to load when the quiz is exited
 
     [Header("UI Elements")]
     public Text questionText; // UI text for displaying the question
@@ -34,11 +35,18 @@ public class QuizManager : MonoBehaviour
     public GameObject resultPanel; // Panel to show results at the end of the quiz
     public GameObject continueExitPanel; // Panel with options to continue to the next question or exit
     public Text finalScoreText; // Text to display final score
-
+    public Button backButton; // Back button to show quit confirmation modal
+ 
     // Continue panel after every question answered
     public GameObject continuePanel; // Panel visible after each question to continue
     public Button continueQuestionButton; // Button to continue to the next question
     public Button exitQuestionButton; // Button to exit the quiz
+   
+    [Header("Trivia Modal")]
+    public GameObject triviaModal; // Panel for displaying trivia information
+    public TextMeshProUGUI triviaText; // Text component to display the trivia information
+    public Button closeTriviaButton; // Button to close the trivia modal
+
 
     [Header("Audio Clips")]
     public AudioSource audioSource; // Audio source to play sounds
@@ -49,6 +57,12 @@ public class QuizManager : MonoBehaviour
     private int score = 0; // Player's current score
     private float timer; // Countdown timer for the current question
     private bool isQuizActive = true; // Status to check if the quiz is ongoing
+
+    [Header("Quit Confirmation Modal")]
+    public GameObject quitConfirmationModal;
+    public Button yesQuitButton;
+    public Button noQuitButton;
+
 
     // List of words to be italicized
     private List<string> wordsToItalicize = new List<string> { "indang" };
@@ -91,11 +105,47 @@ public class QuizManager : MonoBehaviour
         if (exitQuestionButton != null)
         {
             exitQuestionButton.onClick.RemoveAllListeners();
-            exitQuestionButton.onClick.AddListener(ExitGame);
+            exitQuestionButton.onClick.AddListener(ShowQuitConfirmation);
+
         }
+
+        // Set up close trivia button listener
+        if (closeTriviaButton != null)
+        {
+            closeTriviaButton.onClick.RemoveAllListeners();
+            closeTriviaButton.onClick.AddListener(CloseTriviaModal);
+        }
+
+        // Set up back button listener
+        if (backButton != null)
+        {
+            backButton.onClick.RemoveAllListeners();
+            backButton.onClick.AddListener(ShowQuitConfirmation);
+        }
+
 
         LoadQuestion(); // Load the first question
         StartCoroutine(TimerCountdown()); // Start the timer countdown
+
+        // Quit Confirmation Buttons
+        if (yesQuitButton != null)
+        {
+            yesQuitButton.onClick.RemoveAllListeners();
+            yesQuitButton.onClick.AddListener(ExitGame); // Confirm quit
+        }
+        if (noQuitButton != null)
+        {
+            noQuitButton.onClick.RemoveAllListeners();
+            noQuitButton.onClick.AddListener(() =>
+            {
+                quitConfirmationModal.SetActive(false); // Cancel quit
+            });
+        }
+
+    }
+    void ShowQuitConfirmation()
+    {
+        quitConfirmationModal.SetActive(true); // Show the modal
     }
 
 
@@ -137,7 +187,7 @@ public class QuizManager : MonoBehaviour
 
 
             // Update UI with the current question's text and image
-            questionText.text = q.questionText;
+            questionText.text = formattedQuestionText;
             questionImage.sprite = q.questionImage;
             questionImage.gameObject.SetActive(q.questionImage != null);
 
@@ -192,7 +242,7 @@ public class QuizManager : MonoBehaviour
             audioSource.PlayOneShot(correctSound); // Play the correct answer sound
 
             // Update score based on question difficulty
-            score += quizzes[currentQuestionIndex].isHard ? 20 : 10; // Add appropriate points to score based on question difficulty
+            score += quizzes[currentQuestionIndex].isHard ? 500 : 10; // Add appropriate points to score based on question difficulty
 
             optionButtons[selectedIndex].GetComponent<Image>().color = Color.green; // Change button color to green to indicate correct answer
         }
@@ -205,19 +255,43 @@ public class QuizManager : MonoBehaviour
 
         // Update score UI immediately
         UpdateScoreText();
+        // Show trivia before continue panel
+        ShowTriviaModal(quizzes[currentQuestionIndex].trivia);
+        // Pass current question to display its trivia
 
+        //StartCoroutine(ShowContinuePanel()); // Show continue panel after a delay
+    }
+
+    /// <summary>
+    /// Shows the trivia modal with the given trivia text.
+    /// </summary>
+    /// <param name="trivia">The trivia text to display.</param>
+    void ShowTriviaModal(string trivia)
+    {
+        triviaText.text = trivia; // Set the trivia text
+        triviaModal.SetActive(true); // Show the trivia modal
+    }
+
+    /// <summary>
+    /// Closes the trivia modal.
+    /// </summary>
+    void CloseTriviaModal()
+    {
+        triviaModal.SetActive(false); // Hide the trivia modal
         StartCoroutine(ShowContinuePanel()); // Show continue panel after a delay
     }
+
 
     /// <summary>
     /// Coroutine that shows the continue panel after a delay following an answer.
     /// </summary>
     IEnumerator ShowContinuePanel()
     {
-        isQuizActive = false; // Mark the quiz as inactive
-        yield return new WaitForSeconds(1.5f); // Wait for 1.5 seconds before showing continue panel
-        continuePanel.SetActive(true); // Activate the continue panel
+        isQuizActive = false;
+        continuePanel.SetActive(true);
+        yield return null; // Still needs to be a coroutine, but no delay
     }
+
 
     /// <summary>
     /// Continues to the next question or shows the final score if the quiz is over.
@@ -322,7 +396,7 @@ public class QuizManager : MonoBehaviour
     /// </summary>
     void ExitGame()
     {
-        SceneManager.LoadScene(nextSceneName); // Load the next scene
+        SceneManager.LoadScene("Main");
     }
 
     /// <summary>
