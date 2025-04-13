@@ -26,25 +26,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: f553a85666ffc9c469e1aa20cb1bda9e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TriviaScene1.unity
     guid: f72edba1aa0cff84385e4786e3fc63f4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TriviaScene2.unity
     guid: d720f2949986024458827d6b0802d6d9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TriviaScene3.unity
     guid: 9abf52c1dd13b6545a606d8261a0c690
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TriviaScene4.unity
     guid: d7df5da52659d6a4ebf209ec802022f4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TriviaScene5.unity
     guid: 4781e63f9f15f4346ab8d300a0cb1f1a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TriviaScene6.unity
     guid: 3d878212dba3f524193af6ea16d96f06
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TriviaScene7.unity
     guid: f3a45b2b7e41a7848bdfc5f0e62f2316
   m_configObjects: {}

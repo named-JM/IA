@@ -706,7 +706,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Your Name Here\nIT Student \nYour Name Here\nIT Student"
+  m_text: 'LILIBETH LOPERA
+
+    BSIT CVSU TRECE MARTIRES CAMPUS
+
+
+    JOHN MARK SOLOMON
+
+    BSIT
+    CVSU TRECE MARTIRES CAMPUS'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -875,6 +883,43 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &619381438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619381439}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &619381439
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619381438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 836010027}
+  - {fileID: 2084582382}
+  m_Father: {fileID: 1756281998}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 34, y: -1641}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &682847184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1306,17 +1351,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836010026}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1295493, y: 1.1295493, z: 1.1295493}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1555501969}
+  m_Father: {fileID: 619381439}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.04579167, y: 0.012710228}
   m_AnchorMax: {x: 0.16435418, y: 0.06928977}
-  m_AnchoredPosition: {x: -17.819824, y: 114}
-  m_SizeDelta: {x: -11.590027, y: -32.0224}
+  m_AnchoredPosition: {x: -737.7673, y: -15.619957}
+  m_SizeDelta: {x: 204.19374, y: 185.62018}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &836010028
 MonoBehaviour:
@@ -1740,7 +1785,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 514, y: 943}
+  m_AnchoredPosition: {x: 552, y: 879}
   m_SizeDelta: {x: 230.9673, y: 225.2468}
   m_Pivot: {x: 0.49999946, y: 0.49999905}
 --- !u!114 &1132734585
@@ -2015,9 +2060,7 @@ RectTransform:
   - {fileID: 1875780254}
   - {fileID: 955269826}
   - {fileID: 1632822900}
-  - {fileID: 836010027}
   - {fileID: 687330377}
-  - {fileID: 2084582382}
   m_Father: {fileID: 1756281998}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2099,7 +2142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15200001, y: 0.24620835}
   m_AnchorMax: {x: 0.8308747, y: 0.45755118}
-  m_AnchoredPosition: {x: 79.964966, y: 57.034485}
+  m_AnchoredPosition: {x: 79.964966, y: 57.034424}
   m_SizeDelta: {x: -244.2645, y: 80.7175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1632822901
@@ -2347,7 +2390,7 @@ MonoBehaviour:
   m_text: "Indang Ahuy is a fun and interactive tourism app that showcases the beautiful
     spots of Indang, Cavite \u2014 with a twist! \n\r\nThis app isn\u2019t just about
     exploring places \u2014 it\u2019s also packed with engaging mini-games such as:\r\n\r\no
-    4 Pics 1 Word challenges to test your local knowledge\r\no Unlockable maps as
+    4 Pics 1 Place challenges to test your local knowledge\r\no Unlockable maps as
     you progress through your journey\r\no Trivia quizzes for fun learning and rewards\r\n\r\nWhether
     you're a tourist or a local, Indang Ahuy makes discovering Indang an exciting
     adventure. Unlock achievements, learn about local culture, and enjoy games while
@@ -2523,6 +2566,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1555501969}
+  - {fileID: 619381439}
   - {fileID: 1837742584}
   - {fileID: 1955158607}
   m_Father: {fileID: 0}
@@ -3033,17 +3077,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084582381}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2080858676}
-  m_Father: {fileID: 1555501969}
+  m_Father: {fileID: 619381439}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 925, y: -2155.6}
+  m_AnchoredPosition: {x: 865, y: -393}
   m_SizeDelta: {x: 249.09, y: 232.9872}
   m_Pivot: {x: 1.2401506, y: -0.9130101}
 --- !u!114 &2084582383
