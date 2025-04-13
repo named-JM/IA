@@ -242,7 +242,7 @@ public class QuizManager : MonoBehaviour
             audioSource.PlayOneShot(correctSound); // Play the correct answer sound
 
             // Update score based on question difficulty
-            score += quizzes[currentQuestionIndex].isHard ? 500 : 10; // Add appropriate points to score based on question difficulty
+            score += quizzes[currentQuestionIndex].isHard ? 20 : 10; // Add appropriate points to score based on question difficulty
 
             optionButtons[selectedIndex].GetComponent<Image>().color = Color.green; // Change button color to green to indicate correct answer
         }
