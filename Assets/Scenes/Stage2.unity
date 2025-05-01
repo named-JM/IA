@@ -2266,9 +2266,9 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'IROK FESTIVAL  The festival honors the irok (Arenga pinnata), a palm
-      tree whose sweet fruit, known as "kaong," is integral to many Filipino desserts,
-      including halo-halo and various pastries. '
+    trivia: 'The festival honors the irok (Arenga pinnata), a palm tree whose sweet
+      fruit, known as "kaong," is integral to many Filipino desserts, including halo-halo
+      and various pastries. '
   - questionText: THIS FESTIVAL IS HELD DURING NOV 30 - DECEMBER 2
     questionImage: {fileID: 21300000, guid: d2c78e7be6043d449b4d993dea02bb22, type: 3}
     options:
@@ -2278,9 +2278,9 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'IROK FESTIVAL  The festival honors the irok (Arenga pinnata), a palm
-      tree whose sweet fruit, known as "kaong," is integral to many Filipino desserts,
-      including halo-halo and various pastries. '
+    trivia: 'The festival honors the irok (Arenga pinnata), a palm tree whose sweet
+      fruit, known as "kaong," is integral to many Filipino desserts, including halo-halo
+      and various pastries. '
   - questionText: "THIS NAME CAME FROM \u201CLIM\u201D AND \u201CBON,\u201D WORDS
       OVERHEARD DURING A SPANISH-ERA CONVERSATION. "
     questionImage: {fileID: 21300000, guid: fcc7eef4e187da742a35398f49b672a9, type: 3}
@@ -2325,9 +2325,9 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: ' INDANG COMMUNITY MUSEUM  The Indang Community Museum is an asset to
-      the town, not only preserving the past but also fostering a sense of pride
-      and unity among the people of Indang '
+    trivia: 'The Indang Community Museum is an asset to the town, not only preserving
+      the past but also fostering a sense of pride and unity among the people of
+      Indang '
   - questionText: THIS PLACE USED TO BE THE OLD INDANG MUNICIPAL BUILDING
     questionImage: {fileID: 21300000, guid: bad2a3e07e7ecdc4ca18b4ac5be0aff7, type: 3}
     options:
@@ -2337,9 +2337,9 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: ' INDANG COMMUNITY MUSEUM  The Indang Community Museum is an asset to
-      the town, not only preserving the past but also fostering a sense of pride
-      and unity among the people of Indang '
+    trivia: 'The Indang Community Museum is an asset to the town, not only preserving
+      the past but also fostering a sense of pride and unity among the people of
+      Indang '
   - questionText: KALAMAY BUNA IS ONE OF TH DELICACIES OF?
     questionImage: {fileID: 21300000, guid: 272dd87fd5b44ce46bcd7ef962df1f3f, type: 3}
     options:
@@ -2361,9 +2361,8 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'ST. GREGORY THE GREAT PARISH  The St. Gregory the Great Parish Church
-      has deep historical roots, as it was established during the Spanish colonial
-      period. '
+    trivia: 'The St. Gregory the Great Parish Church has deep historical roots, as
+      it was established during the Spanish colonial period. '
   - questionText: 'THIS CHURCH WAS FINISHED YEAR 1710 '
     questionImage: {fileID: 21300000, guid: 0e6334fc1978d384bba4da4e0c429088, type: 3}
     options:
@@ -2373,9 +2372,8 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'ST. GREGORY THE GREAT PARISH  The St. Gregory the Great Parish Church
-      has deep historical roots, as it was established during the Spanish colonial
-      period. '
+    trivia: 'The St. Gregory the Great Parish Church has deep historical roots, as
+      it was established during the Spanish colonial period. '
   - questionText: THIS CHURCH IS LOCATED AT DAINE, INDANG
     questionImage: {fileID: 21300000, guid: cdde2ef5a083a2d4b935c2497dfc1481, type: 3}
     options:
@@ -2435,10 +2433,9 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'LIHIM NG KUBLI  Lihim ng Kubli is a private farm, garden, and event
-      venue located in Purok 7 Ilaya, Barangay Guyam Malaki, Indang, Cavite. This
-      tranquil and natural site is perfect for gatherings, personal reflection, and
-      private events. '
+    trivia: 'Lihim ng Kubli is a private farm, garden, and event venue located in
+      Purok 7 Ilaya, Barangay Guyam Malaki, Indang, Cavite. This tranquil and natural
+      site is perfect for gatherings, personal reflection, and private events. '
   - questionText: THIS PLACE IS LOCATED AT TAMBO MALAKI , INDANG
     questionImage: {fileID: 21300000, guid: b6d4d901fd70ae44c816e1f8e32cf6cf, type: 3}
     options:
@@ -2448,8 +2445,8 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'EMV FLOWER FARM  EMV Flower Farm contributes to the local celebration
-      of flower festivals in the region. '
+    trivia: 'EMV Flower Farm contributes to the local celebration of flower festivals
+      in the region. '
   - questionText: This place is located at agus-os, indang
     questionImage: {fileID: 21300000, guid: c82373b9e9a75614eadf0d40745d95eb, type: 3}
     options:
@@ -2459,8 +2456,8 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'LA ULRICH LANDFARM RESORT  La UlrichLand Farm Resort is a private retreat
-      located in Barangay Agus-os, Indang, Cavite. '
+    trivia: 'La UlrichLand Farm Resort is a private retreat located in Barangay Agus-os,
+      Indang, Cavite. '
   - questionText: 'Ths place is located at carasuchi, indang '
     questionImage: {fileID: 21300000, guid: 6749ff9231c9c994093634c01c1d420e, type: 3}
     options:
@@ -2481,8 +2478,8 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'BOUNTY HARVEST FARM  Bounty Harvest Farm, also known as Crooc Agri-Tourism,
-      is an orchard-based agri-tourism destination located in Indang, Cavite.  '
+    trivia: 'Bounty Harvest Farm, also known as Crooc Agri-Tourism, is an orchard-based
+      agri-tourism destination located in Indang, Cavite.  '
   - questionText: 'This place locates in buena cerca , indang '
     questionImage: {fileID: 21300000, guid: 26daec7383688ba488853d61885b4b3f, type: 3}
     options:
@@ -2492,8 +2489,8 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'CANOPY FARM   Canopy Farm is a private resort located in Buna Cerca,
-      Indang, Cavite, offering a serene escape from urban life. '
+    trivia: 'Canopy Farm is a private resort located in Buna Cerca, Indang, Cavite,
+      offering a serene escape from urban life. '
   - questionText: 'This place is located at calumpong lejos, indang '
     questionImage: {fileID: 21300000, guid: bfb3a510ae96ff0439f5a0da4aefb1f6, type: 3}
     options:
@@ -2503,10 +2500,9 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'MACALIMA EVENTS PLACE AND RESORT Macalima Events Place & Rental is a
-      private resort and event venue located in Barangay Calumpang Lejos 1, Indang,
-      Cavite, Philippines. It offers a relaxing environment suitable for various
-      events, gatherings, and vacations. '
+    trivia: 'Macalima Events Place & Rental is a private resort and event venue located
+      in Barangay Calumpang Lejos 1, Indang, Cavite, Philippines. It offers a relaxing
+      environment suitable for various events, gatherings, and vacations. '
   - questionText: 'This place is located at mataas na lupa '
     questionImage: {fileID: 21300000, guid: d8d69a2b27127064f94b94d3c42e0f82, type: 3}
     options:
@@ -2528,9 +2524,8 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'EL HERENCIA GARDEN RESORT  El Herencia Garden Resort is a private resort
-      located in Indang, Cavite, offering a tranquil environment for relaxation and
-      leisure.  '
+    trivia: 'El Herencia Garden Resort is a private resort located in Indang, Cavite,
+      offering a tranquil environment for relaxation and leisure.  '
   - questionText: This place is located at pulo, indang
     questionImage: {fileID: 21300000, guid: c7ea0cf4d93f3eb4da0a0e8bb7b2d7a1, type: 3}
     options:
@@ -2540,9 +2535,8 @@ MonoBehaviour:
     - None of the above
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'HAMANI PRIVATE RESORT  Hamani Private Resort is a spacious and well-equipped
-      venue located in Brgy. Pulo, Indang, Cavite, approximately a 90-minute drive
-      from Manila. '
+    trivia: 'Hamani Private Resort is a spacious and well-equipped venue located
+      in Brgy. Pulo, Indang, Cavite, approximately a 90-minute drive from Manila. '
   - questionText: INDANG IS A TOWN IN THE PROVINCE OF CAVITE, NOW KNOWN AS THE _____?
     questionImage: {fileID: 21300000, guid: f494e00ce0f1b064688b7cf21c21d5bc, type: 3}
     options:
@@ -2564,9 +2558,9 @@ MonoBehaviour:
     - 'Cardinal Luis Antonio Gokim Tagle '
     correctAnswerIndex: 0
     isHard: 1
-    trivia: "SEVERINO DELAS ALAS  Don Severino de las Alas (January 8, 1851 \u2013
-      November 4, 1918) was a distinguished Filipino educator, lawyer, public servant,
-      and philanthropist from Indang, Cavite. "
+    trivia: "Don Severino de las Alas (January 8, 1851 \u2013 November 4, 1918) was
+      a distinguished Filipino educator, lawyer, public servant, and philanthropist
+      from Indang, Cavite. "
   - questionText: 'THIS CANDY, ORIGINALLY FROM BRGY. KAYQUIT, INDANG, CAVITE, IS
       POPULAR FOR ITS CARAMEL TASTE, NOT TOO SWEET, AND AVAILABLE IN LOCAL GROCERY
       AND SARI-SARI STORES. '
@@ -2578,8 +2572,8 @@ MonoBehaviour:
     - 'pastillas '
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'BALIKUTSA  Balikutsa in Indang originates from Barangay Kayquit, where
-      it is crafted using a unique process that imparts a distinct taste and appearance. '
+    trivia: 'Balikutsa in Indang originates from Barangay Kayquit, where it is crafted
+      using a unique process that imparts a distinct taste and appearance. '
   - questionText: THIS TRADITIONAL KAKANIN IS KNOWN FOR ITS SWEET AND CHEWY TEXTURE.
     questionImage: {fileID: 21300000, guid: 4c61b9d16a62a4545a5b95affdcbb19f, type: 3}
     options:
@@ -2625,8 +2619,8 @@ MonoBehaviour:
     - 'Sukang paombong '
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'SUKANG IROK  Sukang Irok is a traditional Filipino vinegar made from
-      the sap of the Arenga pinnata tree, commonly known as the kaong or sugar palm. '
+    trivia: 'Sukang Irok is a traditional Filipino vinegar made from the sap of the
+      Arenga pinnata tree, commonly known as the kaong or sugar palm. '
   - questionText: 'WHAT ARE THE LEADING CROPS GROWN IN INDANG AND THE SURROUNDING
       AREAS? '
     questionImage: {fileID: 21300000, guid: e4356efa6d73b4b42b3165b6f9c51049, type: 3}
@@ -2637,9 +2631,9 @@ MonoBehaviour:
     - real estate, networking, business
     correctAnswerIndex: 0
     isHard: 1
-    trivia: ABACA , COCONUTS , UPLAND RICE , CORN   Abaca, coconuts, upland rice,
-      and corn are important agricultural products that are cultivated in various
-      regions of the Philippines, including places like Indang, Cavite.
+    trivia: Abaca, coconuts, upland rice, and corn are important agricultural products
+      that are cultivated in various regions of the Philippines, including places
+      like Indang, Cavite.
   - questionText: SINCE 1999, THIS COMPANY SPECIALIZES IN CRAFTING BAHAY KUBOS AND
       YK'S CRAFTS, WHICH CREATE HANDMADE BOUQUETS.
     questionImage: {fileID: 21300000, guid: ca37d4da8f4c93041a739c0a31d9f9d5, type: 3}
@@ -2650,8 +2644,8 @@ MonoBehaviour:
     - 'Likhang Maragondon '
     correctAnswerIndex: 0
     isHard: 1
-    trivia: 'REYMAR BAMBOO CRAFT Reymar Bamboo Craft is a family-owned business specializing
-      in bamboo construction and crafts, located in Lumampong Balagbag, Indang, Cavite. '
+    trivia: 'Reymar Bamboo Craft is a family-owned business specializing in bamboo
+      construction and crafts, located in Lumampong Balagbag, Indang, Cavite. '
   - questionText: WHERE IS KALIKHASAN LEISURE FARM SITUATED?
     questionImage: {fileID: 21300000, guid: 68b709af6060f6c45b5cbef5ec598e9f, type: 3}
     options:

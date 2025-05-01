@@ -614,8 +614,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -715,7 +715,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.1891925}
   m_AnchorMax: {x: 1, y: 0.36160955}
-  m_AnchoredPosition: {x: 0.44995117, y: 6.9999695}
+  m_AnchoredPosition: {x: 0.44995117, y: 7}
   m_SizeDelta: {x: 0.8999, y: 39.340088}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223593049
@@ -924,7 +924,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 29.999939, y: -27}
+  m_AnchoredPosition: {x: 30, y: -27}
   m_SizeDelta: {x: 170.5567, y: 170.96}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &410656005
@@ -1259,6 +1259,311 @@ MonoBehaviour:
     trivia: 'La Ulrich Land Farm Resort offers a well-maintained furnished house
       where you can have good times with your friends, family, and many more.    
       Location: Barangay Agus-os '
+  - images:
+    - {fileID: 21300000, guid: 2cd164274972b1241a6f5dc91ab5d341, type: 3}
+    - {fileID: 21300000, guid: 8c04b3926abc8094fb4f5406d28e3f4d, type: 3}
+    - {fileID: 21300000, guid: 15fae8579c06d68438c3a44ac02b66cc, type: 3}
+    - {fileID: 21300000, guid: 66199edb0596d4b4299a346452579e60, type: 3}
+    correctWord: 'Alta Rios '
+    hint: 
+    trivia: Alta Rios Resort is a scenic retreat nestled in Lumampong Halayhay, Indang,
+      Cavite, offering a blend of adventure and relaxation amidst nature.
+  - images:
+    - {fileID: 21300000, guid: d2bbdb83a442afb44b565934059f43ca, type: 3}
+    - {fileID: 21300000, guid: ba03fea65fc1c844cb1f34b34d72ea10, type: 3}
+    - {fileID: 21300000, guid: 8f64ffba628602d449541bd6ac7ae098, type: 3}
+    - {fileID: 21300000, guid: d7eee9e979a748d4a8233cebbe24c3f4, type: 3}
+    correctWord: Balay Indang
+    hint: 
+    trivia: Balay Indang is a serene bed-and-breakfast retreat nestled in Mahabang
+      Kahoy Cerca, Indang, Cavite. The name "Balay" means "house" in Ilocano, reflecting
+      its homely ambiance. This tranquil haven is ideal for weekend getaways, retreats,
+      or intimate gatherings.
+  - images:
+    - {fileID: 21300000, guid: 58e264ebc4a2f8a40a091ec5e556c819, type: 3}
+    - {fileID: 21300000, guid: 745fee491ee840b4cb3b5c9231da56f4, type: 3}
+    - {fileID: 21300000, guid: afa94c08ee7ed1945ae951816ea59543, type: 3}
+    - {fileID: 21300000, guid: a72044b8090880644a5d2db04ed20c75, type: 3}
+    correctWord: Belle Accuiel Events Place
+    hint: 
+    trivia: Belle-Accueil Event's Place is a charming venue located in Mahabang Kahoy
+      Cerca, Indang, Cavite, ideal for weddings, birthdays, and other special occasions.
+      The venue offers a sophisticated setting that elevates every event to perfection.
+      They provide affordable packages and services to cater to various event needs.
+  - images:
+    - {fileID: 21300000, guid: d88381c944f89c546b470fc722f72024, type: 3}
+    - {fileID: 21300000, guid: 9360c12716d94324e8760bf73d0b343f, type: 3}
+    - {fileID: 21300000, guid: 84b58aaa244bdda489e193f6da85615a, type: 3}
+    - {fileID: 21300000, guid: 3210cd52e97f2ed4e8bfc0a56f4772c4, type: 3}
+    correctWord: Casa Virliosa Indang
+    hint: 
+    trivia: Casa Virliosa is a cozy, pet-friendly private cabin located in Tambo
+      Malaki, Indang, Cavite. It's an affordable nature retreat ideal for unwinding
+      with family, friends, or loved ones. The cabin offers a relaxing atmosphere,
+      perfect for a peaceful getaway.
+  - images:
+    - {fileID: 21300000, guid: 2d5ce1da79cd8e649a4bf5a6bed43625, type: 3}
+    - {fileID: 21300000, guid: e48a46b168209c147b7b7848191df74f, type: 3}
+    - {fileID: 21300000, guid: efe8c11bb9b17bf4ca352ad8efa79d0d, type: 3}
+    - {fileID: 21300000, guid: bb8874e285e588c44b44c34d255e5d7c, type: 3}
+    correctWord: CVSU Agri Eco Park
+    hint: 
+    trivia: "Cvsu Agri Eco Farm tourism park in Indang, Cavite is a 5-hectare site
+      within Cavite State University that features a coffee farm, bee program, native
+      animal, herbal gardens, and educational attractions \u2014 promoting sustainable
+      agriculture and eco-tourism."
+  - images:
+    - {fileID: 21300000, guid: ca873b131f608b843829a5688271e092, type: 3}
+    - {fileID: 21300000, guid: ed36e20d71221c14f86682234c829889, type: 3}
+    - {fileID: 21300000, guid: b5144074b59deb74c89224b4b4186454, type: 3}
+    - {fileID: 21300000, guid: 505d1ece74670554ca650f785941c5e1, type: 3}
+    correctWord: Dayuhan Events Place
+    hint: 
+    trivia: Dayuhan's Events Place is a private resort and event venue located in
+      Barangay Lumampong Halayhay, Indang, Cavite. The venue offers a serene and
+      refreshing environment, making it ideal for various occasions such as weddings,
+      birthdays, and other special events.
+  - images:
+    - {fileID: 21300000, guid: 69f6ee699fedaef43ac480fcaadc1ab2, type: 3}
+    - {fileID: 21300000, guid: 6f848e3f4cac10d4c9311027ba314bed, type: 3}
+    - {fileID: 21300000, guid: e6242f0445620eb4f8a786012ee0be24, type: 3}
+    - {fileID: 21300000, guid: a6cd5261d63fcf54294beaeb651978d2, type: 3}
+    correctWord: Donsyls Place
+    hint: 
+    trivia: DonSyl's Place is a private resort and event venue located in Calumpang
+      Cerca, Indang, Cavite. Spanning approximately 10,000 square feet, it offers
+      versatile indoor and outdoor spaces suitable for various occasions, including
+      weddings, birthdays, and corporate events. The venue provides amenities such
+      as air-conditioned rooms, nipa huts, a pavilion with a pantry and comfort rooms,
+      and scenic open grounds.
+  - images:
+    - {fileID: 21300000, guid: ff15f7736226f1541b061257146293db, type: 3}
+    - {fileID: 21300000, guid: 7b3a7213c5c944247979ee093af5534a, type: 3}
+    - {fileID: 21300000, guid: ef32704c4c2985a43a73bc9d53104ebe, type: 3}
+    - {fileID: 21300000, guid: 59ae5ece63214294cb9f583b5a9e3bd3, type: 3}
+    correctWord: El Herencia Garden Resort
+    hint: 
+    trivia: El Herencia Garden Resort is a private resort located in Barangay Agus-os,
+      Indang, Cavite. It offers a tranquil setting ideal for family gatherings, team-building
+      activities, and special occasions.
+  - images:
+    - {fileID: 21300000, guid: 40cfb5f36dfd350488b0985dbc8e35fd, type: 3}
+    - {fileID: 21300000, guid: 040f3a9281ef59f48a5e14ad09faad96, type: 3}
+    - {fileID: 21300000, guid: 70d1ab17da6904e439a165527c4a68db, type: 3}
+    - {fileID: 21300000, guid: 79685b761ba1d1c42afe387fcde45d6d, type: 3}
+    correctWord: Hamani Pool Resort
+    hint: 
+    trivia: Hamani Pool Resort is a private resort located at 092 Brgy. Pulo, Indang,
+      Cavite. It offers a tranquil setting ideal for family gatherings, team-building
+      activities, and special events. The resort features an infinity pool, kiddie
+      pool, event pavilion, basketball court, and various recreational amenities.
+      Accommodation options include rooms suitable for groups ranging from 10 to
+      100 guests.
+  - images:
+    - {fileID: 21300000, guid: c4a1a3285dcfeea44bc0130b08799e3a, type: 3}
+    - {fileID: 21300000, guid: 6ab1ffadd1de385459a8aadc7fcef0b9, type: 3}
+    - {fileID: 21300000, guid: 1a6e0181211460d40b5bbfa6b22944e3, type: 3}
+    - {fileID: 21300000, guid: 089f29f858f47834fb17e7920abafedc, type: 3}
+    correctWord: Kanlungan Events Place
+    hint: 
+    trivia: Kanlungan Events Place in Indang, Cavite, offers a serene garden setting
+      ideal for intimate weddings, family gatherings, birthdays, and corporate events.
+      The venue provides a peaceful ambiance, making it a perfect backdrop for creating
+      lasting memories.
+  - images:
+    - {fileID: 21300000, guid: 7594ff3010f8eab41927a5614f7daefc, type: 3}
+    - {fileID: 21300000, guid: f9e639fb9df27b84d8d5c014dbc460e9, type: 3}
+    - {fileID: 21300000, guid: 2f4746995420e224f8572402717ad6b0, type: 3}
+    - {fileID: 21300000, guid: 243bb83bca54e22468fc1c3eeba2e33b, type: 3}
+    correctWord: La Felicidad Resort
+    hint: 
+    trivia: "La Felicidad Private Resort is a serene getaway nestled in Calumpang
+      Cerca, Indang, Cavite, approximately 2\u20133 hours from Metro Manila. Ideal
+      for family gatherings, team-building events, and intimate celebrations, the
+      resort offers a tranquil environment for relaxation."
+  - images:
+    - {fileID: 21300000, guid: 756d8dc9762c71947a14dbaef35387cc, type: 3}
+    - {fileID: 21300000, guid: 8520af10a54e6284e9f8773e5e831854, type: 3}
+    - {fileID: 21300000, guid: 936a728e65bbcff43a12034454ca7af6, type: 3}
+    - {fileID: 21300000, guid: 729f80e89f1cd6a4ca175444a40723d3, type: 3}
+    correctWord: Lolo and Lalas Farm
+    hint: 
+    trivia: Lolo & Lala's Farm is a private resort and event venue located in Calumpang
+      Cerca, Indang, Cavite. It offers a serene and rustic setting, making it ideal
+      for family gatherings, group outings, and special occasions.
+  - images:
+    - {fileID: 21300000, guid: 0e5e95570854f8c4ab525435d91d4469, type: 3}
+    - {fileID: 21300000, guid: 6e9cb52a37593694f942fa92a64d0de2, type: 3}
+    - {fileID: 21300000, guid: e3dd016e8686ba9459c488a2b7e275ca, type: 3}
+    - {fileID: 21300000, guid: 137c146bef19b354b91ea8a9cf557121, type: 3}
+    correctWord: 'LVG Paraiso Resort '
+    hint: 
+    trivia: LVG Paraiso Resort is a serene getaway nestled in Carasuchi, Indang,
+      Cavite, offering a blend of relaxation and recreation.
+  - images:
+    - {fileID: 21300000, guid: a4c4c12de0a3f0845af671a6069e7d8e, type: 3}
+    - {fileID: 21300000, guid: d66b67c2f8d511a428b1add253e53433, type: 3}
+    - {fileID: 21300000, guid: 5e0941829521c474b9a7da71bdde0de9, type: 3}
+    - {fileID: 21300000, guid: 25d2af7497920ef44bb3eb1425f7358a, type: 3}
+    correctWord: Marayata resort
+    hint: 
+    trivia: Marayata Farm, located in Dimaranan compound, Binambanga, Indang-Alfonso
+      Road, Indang, Cavite, is known for its unique kaong-based products, farm-to-table
+      dining, relaxing atmosphere, community events, and sustainable farming practices.
+  - images:
+    - {fileID: 21300000, guid: 33c1b14aa5241f144b516c3dd7f5dae7, type: 3}
+    - {fileID: 21300000, guid: da8b27eb0de811444834abcf2fd731b0, type: 3}
+    - {fileID: 21300000, guid: b206c7324a8f0b74797f46f2d60a6d42, type: 3}
+    - {fileID: 21300000, guid: 497810eb8584d2343b1d81507ca4bc26, type: 3}
+    correctWord: Mojicas Hardin
+    hint: 
+    trivia: Mojica's Jardin is a newly established event venue located along Trece-Indang
+      Road in Barangay Alulod, Indang, Cavite. It offers a charming garden setting
+      ideal for weddings, birthdays, anniversaries, and other special occasions.
+  - images:
+    - {fileID: 21300000, guid: 42eee5c443e9f9f4b8052994da61c62b, type: 3}
+    - {fileID: 21300000, guid: 4d2a5e4b8b2fe91458d43debe4231c00, type: 3}
+    - {fileID: 21300000, guid: fe28c1728aecd7e459bd8e2086659842, type: 3}
+    - {fileID: 21300000, guid: 32f4d961e743c5c4380314ac12c98ba9, type: 3}
+    correctWord: Ras Private Pool
+    hint: 
+    trivia: R.A.'s Private Pool is a secluded resort located in Brgy. Patillo, Alulod,
+      Indang, Cavite. It offers a private and exclusive experience, accommodating
+      one group per booking, ensuring a tranquil environment for guests.
+  - images:
+    - {fileID: 21300000, guid: 15bb593da1d5dab48a75492bb7cdcfd9, type: 3}
+    - {fileID: 21300000, guid: 0a82e39bb29d3d24b9b56e7cccf1418e, type: 3}
+    - {fileID: 21300000, guid: 55e882a5efbf31d47b1a1c4e932a8eba, type: 3}
+    - {fileID: 21300000, guid: 715b7c1816c7bce438562e2b3352365a, type: 3}
+    correctWord: Sa Kanluran Resort
+    hint: 
+    trivia: "Sa Kanluran Private Resort is a tranquil getaway located in Daine 1,
+      Indang, Cavite, along East-West Road (also known as Daine\u2013Alulod Road).
+      Ideal for family reunions, team-building events, and intimate gatherings, the
+      resort offers a peaceful escape from city life."
+  - images:
+    - {fileID: 21300000, guid: 16f2e72c4089fbc4dba9fa6c014c9cc1, type: 3}
+    - {fileID: 21300000, guid: 7e3c66a37b33a5340bbf5a33413e8af2, type: 3}
+    - {fileID: 21300000, guid: aa08d3f49d3f84840be33296f4e44d9c, type: 3}
+    - {fileID: 21300000, guid: 066d2e385635be14a95599fa4ca72da1, type: 3}
+    correctWord: Sagana Spring Resort
+    hint: 
+    trivia: Sagana Spring Resort is a newly opened nature spring resort located at
+      4588 Kaytambog, Indang, Cavite. It offers a refreshing escape with its natural
+      spring pools and scenic surroundings, making it an ideal spot for day trips
+      and family outings. The resort is known for its affordable entrance fee, providing
+      a budget-friendly option for those looking to enjoy a relaxing day amidst nature.
+  - images:
+    - {fileID: 21300000, guid: 1de3e3024fe92be48b710fc1ef7847b7, type: 3}
+    - {fileID: 21300000, guid: 171affb051e7397439a93515d4d1a077, type: 3}
+    - {fileID: 21300000, guid: 8e7192542e8b2804c8d0015248e5c5bc, type: 3}
+    - {fileID: 21300000, guid: 94eeee507cadc2947a3403d4ec441fba, type: 3}
+    correctWord: Siglo Farm Cafe
+    hint: 
+    trivia: "Siglo Farm Caf\xE9, located at 337 Narra Street, Kayquit III, Indang,
+      Cavite, is a charming garden caf\xE9 nestled within Paraiso Farm Resort. It
+      offers an alfresco dining experience amidst lush greenery, featuring unique
+      dishes like Adobong Antigo and freshly baked pastries. Guests can also enjoy
+      dining under a geodesic dome, adding a touch of novelty to their visit. The
+      caf\xE9 is pet-friendly and provides a serene escape from the bustling city
+      life."
+  - images:
+    - {fileID: 21300000, guid: 7837ac6c14b997244a73c2c148cf84c0, type: 3}
+    - {fileID: 21300000, guid: 0f99754e304d39542be2309125c522a7, type: 3}
+    - {fileID: 21300000, guid: 657db39c8b2a5ff4caa5919c6d3afa42, type: 3}
+    - {fileID: 21300000, guid: 57196b53e72c4554585fe73a23f7cf23, type: 3}
+    correctWord: The Joy of Nicky 1
+    hint: 
+    trivia: The JOY of NICKY Private Resort is a tranquil getaway located at 2324-B,
+      Purok 7, Barangay Guyam Malaki, Indang, Cavite. It's ideal for family gatherings,
+      group outings, and special occasions. The resort features three cozy rooms,
+      a swimming pool, and a spacious outdoor area for various activities.
+  - images:
+    - {fileID: 21300000, guid: 3794894926f392a4c84f6808677f7c29, type: 3}
+    - {fileID: 21300000, guid: 78ef6804e1ff9fb4c924c644ecf14724, type: 3}
+    - {fileID: 21300000, guid: e13364192314a4f4cb5d63fe572e6416, type: 3}
+    - {fileID: 21300000, guid: 0c0333a1b89903b4094ed3923aef2be6, type: 3}
+    correctWord: Casa Goow Farm Resort
+    hint: 
+    trivia: 'La Ulrich Land Farm Resort offers a well-maintained furnished house
+      where you can have good times with your friends, family, and many more.    
+      Location: Barangay Agus-os '
+  - images:
+    - {fileID: 21300000, guid: 8593533ed18df534bafe0782a5f650b6, type: 3}
+    - {fileID: 21300000, guid: c612f54d0f881a34fa1894d1874a7e6b, type: 3}
+    - {fileID: 21300000, guid: eb5b4527d4c5d2743a0cecd065a0d4f5, type: 3}
+    - {fileID: 21300000, guid: d4c0b5d8ebfbe824594d6f67c5fc0a0d, type: 3}
+    correctWord: 'Terre Verte Farm Resort '
+    hint: 
+    trivia: 'Escape to Terre Verte Farm Resort for unforgettable celebrations! Newly
+      renovated and expanded, offering outdoor activities, camping, and scenic views.
+      Create lifelong memories! '
+  - images:
+    - {fileID: 21300000, guid: 0f8b8717ce144784980773f336a20f6b, type: 3}
+    - {fileID: 21300000, guid: ce5b4a06ff73f5942a4f92efe1cd0681, type: 3}
+    - {fileID: 21300000, guid: ddc786f8664b35047ad1a66744f1fb4c, type: 3}
+    - {fileID: 21300000, guid: 69249d26b3af766438a930b18b37815a, type: 3}
+    correctWord: Our Haven Events Place
+    hint: 
+    trivia: 'Say ''I do'' amidst lush greenery at Our Haven Events Place! A dream
+      wedding destination with ample space and serene ambiance. Make your special
+      day unforgettable! '
+  - images:
+    - {fileID: 21300000, guid: 64210eb779b040d458b0b1b4ccd74d13, type: 3}
+    - {fileID: 21300000, guid: ee48b31899edbd84ba9aabe3c667beed, type: 3}
+    - {fileID: 21300000, guid: e7e0c4823ff0cd24583537961124300f, type: 3}
+    - {fileID: 21300000, guid: 2812957e9fdc2a04d993e1244adc2906, type: 3}
+    correctWord: Driftwoods Action Park
+    hint: 
+    trivia: 'Get your adrenaline pumping at Driftwoods Action and Adventure Park!
+      Outdoor camping, sports activities, and thrilling events await! '
+  - images:
+    - {fileID: 21300000, guid: 180ebcea93627714d921cdf3ad7e590b, type: 3}
+    - {fileID: 21300000, guid: 71601f57285183b41ad3b72b69178f3f, type: 3}
+    - {fileID: 21300000, guid: f04b553d6f8937d4d982e3e75d44f1e1, type: 3}
+    - {fileID: 21300000, guid: 1a368e8c993911b478814f8f90649e0f, type: 3}
+    correctWord: La Casa de Serenidad
+    hint: 
+    trivia: 'Create family traditions La Casa De Serenidad! Relaxing getaways, fun
+      activities, and scenic views. Your home away from home! '
+  - images:
+    - {fileID: 21300000, guid: d7ba2cb35dc66b94abf2b6c5605666c3, type: 3}
+    - {fileID: 21300000, guid: 313082d102661964999443cbe5286e33, type: 3}
+    - {fileID: 21300000, guid: 0df420a0b137fbb4ab9609c4ae6b9ea4, type: 3}
+    - {fileID: 21300000, guid: 5012da6abc5796345b98f1ffb0a97338, type: 3}
+    correctWord: Buklod Cabins
+    hint: 
+    trivia: 'Experience glamping bliss at Buklod Cabins in Buna Cerca!  Cozy cabins,
+      string lights, and serene surroundings. Ideal for intimate getaways! '
+  - images:
+    - {fileID: 21300000, guid: 1422fb92161a8d84c8e63186febaa32e, type: 3}
+    - {fileID: 21300000, guid: 8794f7a69fdf3c04aaf0b1f951b1759d, type: 3}
+    - {fileID: 21300000, guid: b9059af568d76cf4ab9fdbf32c18088d, type: 3}
+    - {fileID: 21300000, guid: 0c28dd53d063a804bba37b08b3877dd5, type: 3}
+    correctWord: Claresse Private Resort
+    hint: 
+    trivia: 'experience the ultimate staycation at Claresse Private Resort!  This
+      hidden gem offers a serene ambiance, perfect for friends and families. Enjoy
+      a refreshing dip in their pool, surrounded by lush greenery and nature.  '
+  - images:
+    - {fileID: 21300000, guid: c3cc5dab2a1ccd54dbbabf6ce8c4f1db, type: 3}
+    - {fileID: 21300000, guid: ac9f42214701d3e4ea7a704b3ae2b7ec, type: 3}
+    - {fileID: 21300000, guid: 35a63661b35f7df448c4e2dbe1ea55d6, type: 3}
+    - {fileID: 21300000, guid: 526a4538e398ceb408d9acf1c3964a18, type: 3}
+    correctWord: "Casita de Se\xF1erez  "
+    hint: 
+    trivia: 'Unwind with loved ones at Casita de Senerez ! Infinity pool, cozy cabins,
+      and lush surroundings. Perfect for family getaways and birthday celebrations '
+  - images:
+    - {fileID: 21300000, guid: 3794894926f392a4c84f6808677f7c29, type: 3}
+    - {fileID: 21300000, guid: 78ef6804e1ff9fb4c924c644ecf14724, type: 3}
+    - {fileID: 21300000, guid: e13364192314a4f4cb5d63fe572e6416, type: 3}
+    - {fileID: 21300000, guid: 0c0333a1b89903b4094ed3923aef2be6, type: 3}
+    correctWord: CASA GOOW FARM RESORT
+    hint: 
+    trivia: "Casa Goow  Farm Resort is a newly established private resort located
+      in Calumpang Cerca, Indang, Cavite, approximately 30\u201340 minutes from Tagaytay
+      City. "
   inputFieldPrefab: {fileID: 2779151109824016138, guid: 313ab22cc1c87534c9f6aef035607428, type: 3}
   submitButton: {fileID: 1472883353}
   correctAnswerClip: {fileID: 8300000, guid: 72e6c17dfe701d040bb33f9c318faa9e, type: 3}
@@ -3040,7 +3345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34960285, y: 0.16144164}
   m_AnchorMax: {x: 0.6557039, y: 0.25411677}
-  m_AnchoredPosition: {x: -4.0000916, y: 0.2767334}
+  m_AnchoredPosition: {x: -4.0000916, y: 0.27685547}
   m_SizeDelta: {x: -6.3644104, y: -8.674805}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1030135927
@@ -3209,8 +3514,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3310,7 +3615,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.70816594}
   m_AnchorMax: {x: 1, y: 0.9115133}
-  m_AnchoredPosition: {x: 0.4498291, y: 3.6699219}
+  m_AnchoredPosition: {x: 0.44970703, y: 3.6699219}
   m_SizeDelta: {x: 0.89941, y: 7.3401}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1155645293
@@ -3492,7 +3797,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.70816594}
   m_AnchorMax: {x: 1, y: 0.9115133}
-  m_AnchoredPosition: {x: -0.00012207031, y: -209.77002}
+  m_AnchoredPosition: {x: 0, y: -209.77002}
   m_SizeDelta: {x: 1.8000488, y: 4.679001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1163826121
@@ -4327,8 +4632,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: YES
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4436,7 +4741,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15779434, y: 0.41667518}
   m_AnchorMax: {x: 0.8445958, y: 0.531}
-  m_AnchoredPosition: {x: -2.000061, y: 7}
+  m_AnchoredPosition: {x: -2.000122, y: 7}
   m_SizeDelta: {x: 10.445801, y: -9.505096}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1465350027
@@ -4853,7 +5158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10.372, y: -292.82}
+  m_AnchoredPosition: {x: 10.37207, y: -292.81982}
   m_SizeDelta: {x: 421.05, y: -2240.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1614672043
@@ -5885,8 +6190,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: NO
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
